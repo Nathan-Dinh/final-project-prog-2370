@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/SpaceSpriteSheet.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Boss/BossOne-Squid/Squid Full sheet orange (1).png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Hero/greenbar (2) (1).png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Hero/greenbar (3) (1).png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Hero/health-bar.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Main Ship - Base - Full health.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/ship-sprite-sheet (1).png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Ship1_0010_Hull_GreenFlash4_4.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Wepon/Main ship weapon - Projectile - Auto cannon bullet.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Wepon/Main ship weapon - Projectile - Big Space Gun.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Wepon/Main ship weapon - Projectile - Rocket.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/explosion.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Font/RandomFont.spritefont</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

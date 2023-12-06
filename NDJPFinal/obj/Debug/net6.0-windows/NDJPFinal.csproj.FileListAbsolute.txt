@@ -1,0 +1,94 @@
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.exe
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.deps.json
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.runtimeconfig.json
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.pdb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.csproj.AssemblyReference.cache
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.GeneratedMSBuildEditorConfig.editorconfig
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.AssemblyInfoInputs.cache
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.AssemblyInfo.cs
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.csproj.CoreCompileInputs.cache
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.csproj.CopyComplete
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\refint\NDJPFinal.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.pdb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.genruntimeconfig.cache
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\ref\NDJPFinal.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\SpaceSpriteSheet.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Main Ship - Base - Full health.xnb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\SpaceSpriteSheet.xnb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Main Ship - Base - Full health.xnb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.exe
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.deps.json
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.runtimeconfig.json
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\NDJPFinal.pdb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.csproj.AssemblyReference.cache
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.GeneratedMSBuildEditorConfig.editorconfig
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.AssemblyInfoInputs.cache
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.AssemblyInfo.cs
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.csproj.CoreCompileInputs.cache
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.csproj.CopyComplete
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\refint\NDJPFinal.dll
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.pdb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\NDJPFinal.genruntimeconfig.cache
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\obj\Debug\net6.0-windows\ref\NDJPFinal.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\ship-sprite-sheet (1).xnb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Laser Bullet 4.xnb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\ship-sprite-sheet (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Ship1_0010_Hull_GreenFlash4_4.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Auto cannon bullet.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Rocket.xnb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Ship1_0010_Hull_GreenFlash4_4.xnb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Auto cannon bullet.xnb
+D:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Rocket.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Hero\health-bar.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Boss\BossOne-Squid\Squid Full sheet orange (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Big Space Gun.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Font\RandomFont.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Hero\greenbar (2) (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Hero\greenbar (3) (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\explosion.xnb
