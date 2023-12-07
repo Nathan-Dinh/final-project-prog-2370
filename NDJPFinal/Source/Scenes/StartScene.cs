@@ -1,12 +1,8 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NDJPFinal;
 using NDJPFinal.Source.Scenes;
+using NDJPFinal.Source.Sprites;
 
 namespace JP_ND_FinalProject.Scenes
 {
@@ -14,6 +10,8 @@ namespace JP_ND_FinalProject.Scenes
     {
         SpriteBatch spriteBatch;
         MenuComponent menu;
+        ScrolllingBackground scrolllingBackground;
+
         public int getSelectedIndex()
         {
             return menu.selectedIndex;
@@ -25,8 +23,9 @@ namespace JP_ND_FinalProject.Scenes
             SpriteFont regular = game1.Content.Load<SpriteFont>("Font/RegularFont");
             SpriteFont highlited = game1.Content.Load<SpriteFont>("Font/HighlightedFont");
             menu = new MenuComponent(game1, spriteBatch, regular, highlited,
-                new Vector2(100, 100), new string[] { "START", "OPTIONS","HELP", "EXIT" },
-                Color.White, Color.Red);
+                new Vector2(265, 175), new string[] { "START", "OPTIONS", "HELP", "EXIT" },
+                Color.White, Color.Red) ;
+
             this.Components.Add(menu);
         }
     }

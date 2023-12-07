@@ -1,23 +1,23 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
+using NDJPFinal.Source.Sprites;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Scenes
 {
     internal class MenuComponent : DrawableGameComponent
     {
         private SpriteBatch spriteBatch;
-        private SpriteFont regular, highlighted;
+        private SpriteFont regular, highlighted, randomFont;
         private Vector2 position;
         string[] items;
         private Color regularColor, highlightColor;
         private KeyboardState oldState;
         public int selectedIndex = 0;
+        ScrolllingBackground scrolllingBackground;
+        public Texture2D backgroundTextureTwo;
+        private List<Sprite> _sprites;
 
         internal MenuComponent(Game game, SpriteBatch spriteBatch, SpriteFont regular, SpriteFont highlighted,
             Vector2 position, string[] items, Color regularColor, Color highlightColor) : base(game)
@@ -29,11 +29,18 @@ namespace NDJPFinal.Source.Scenes
             this.items = items;
             this.regularColor = regularColor;
             this.highlightColor = highlightColor;
+            var backgroundTexture = game.Content.Load<Texture2D>("2d/Background/SpaceSpriteSheet");
+            backgroundTextureTwo = game.Content.Load<Texture2D>("2d/Background/Window_Header");
+            randomFont = game.Content.Load<SpriteFont>("Font/RandomFont");
+
+            _sprites = new List<Sprite>();
+            scrolllingBackground = new ScrolllingBackground(backgroundTexture, 0.1f, new Vector2(0, 0));
         }
 
         public override void Update(GameTime gameTime)
         {
             KeyboardState ks = Keyboard.GetState();
+
             if (ks.IsKeyDown(Keys.Down) && oldState.IsKeyUp(Keys.Down))
             {
 
@@ -44,18 +51,25 @@ namespace NDJPFinal.Source.Scenes
 
                 selectedIndex = selectedIndex == 0 ? items.Length - 1 : selectedIndex - 1;
             }
+
             oldState = ks;
+
+            scrolllingBackground.Update(gameTime,_sprites);
+
             base.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime)
         {
             spriteBatch.Begin();
+            scrolllingBackground.Draw(spriteBatch);
+            spriteBatch.Draw(backgroundTextureTwo, new Vector2(150, 100), Color.White);
+            spriteBatch.DrawString(randomFont, "Galactic Defender", new Vector2(190,450), Color.Black);
             for (int i = 0; i < items.Length; i++)
             {
                 if (i == selectedIndex)
                 {
-                    spriteBatch.DrawString(regular, items[i],
+                    spriteBatch.DrawString(highlighted, items[i],
                     new Vector2(position.X, position.Y + highlighted.LineSpacing * i), highlightColor);
                 }
                 else
@@ -64,7 +78,6 @@ namespace NDJPFinal.Source.Scenes
                     new Vector2(position.X, position.Y + highlighted.LineSpacing * i), regularColor);
                 }
             }
-
             spriteBatch.End();
 
             base.Draw(gameTime);

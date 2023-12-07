@@ -16,8 +16,6 @@ namespace NDJPFinal
         private GraphicsDeviceManager _graphics;
         public SpriteBatch SpriteBatch;
 
-        private List<Sprite> _sprites;
-
         public StartScene StartScene;
         public StageOneScene StageOneScene;
 
@@ -37,9 +35,9 @@ namespace NDJPFinal
         {
             SpriteBatch = new SpriteBatch(GraphicsDevice);
             StartScene = new StartScene(this);
-            StageOneScene = new StageOneScene(this);
             this.Components.Add(StageOneScene);
             this.Components.Add(StartScene);
+            this.StageOneScene = new StageOneScene(this);
             StartScene.show();
         }
 
@@ -54,6 +52,7 @@ namespace NDJPFinal
                     switch (selectedScene)
                     {
                         case 0:
+                            ResetStage();
                             StageOneScene.show();
                             break;
                         case 1:
@@ -101,6 +100,13 @@ namespace NDJPFinal
                 }
             }
         }
+
+        public void ResetStage()
+        {
+            this.StageOneScene = new StageOneScene(this);
+            this.Components.Add(StageOneScene);
+        }
+       
     }
 
     public static class Program 
