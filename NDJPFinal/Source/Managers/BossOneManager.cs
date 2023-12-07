@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using NDJPFinal.Source.Sprites;
+using NDJPFinal.Source.Sprites.Boss.BossOne;
+using NDJPFinal.Source.Sprites.Hero;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Manager
 {
-    internal class BossOneCollisionManager : GameComponent
+    internal class BossOneManager : GameComponent
     {
         private Bullet _bullet;
         private BossOne _bossOne;
@@ -19,7 +21,7 @@ namespace NDJPFinal.Source.Manager
         Random random = new Random();
         private List<Sprite> _sprites;
 
-        public BossOneCollisionManager(Game game, ScrolllingBackground scrolllingBackground,BossOne bossOne,BossOneHealthBar bossOneHealthBar, List<Sprite> sprite) : base(game)
+        public BossOneManager(Game game, ScrolllingBackground scrolllingBackground,BossOne bossOne,BossOneHealthBar bossOneHealthBar, List<Sprite> sprite) : base(game)
         {
             this._scrolllingBackground = scrolllingBackground;
             this._bossOne = bossOne;
@@ -43,14 +45,14 @@ namespace NDJPFinal.Source.Manager
                 _bossOne._direction = new Vector2(_bossOne._speed, 2);
             }
 
-            if (_bossOne.Position.X + _bossOne.TextureWidth > _scrolllingBackground._frameWidth)
+            if (_bossOne.Position.X + _bossOne.TextureWidth > _scrolllingBackground._spriteWidth)
             {
                 _bossOne._speed = random.Next(0, 5);
                 _bossOne._speed = _bossOne._speed * -1;
                 _bossOne._direction = new Vector2(_bossOne._speed, 2);
             }
 
-            if (_bossOne.Position.Y + _bossOne.TextureHeight / 2 > _scrolllingBackground._frameWidth/2)
+            if (_bossOne.Position.Y + _bossOne.TextureHeight / 2 > _scrolllingBackground._spriteWidth/2)
             {
                 _bossOne._speed = random.Next(0, 5);
                 _bossOne._speed = _bossOne._speed * -1;
@@ -59,11 +61,11 @@ namespace NDJPFinal.Source.Manager
 
             foreach (Sprite sprite in _sprites)
             {
-                if (sprite is Bullet && sprite.Parent is Ship)
+                if (sprite is Bullet && sprite.Parent is Hero)
                 {
                     Bullet bullet = (Bullet)sprite;
 
-                    if (_bossOne.rectangle.Intersects(bullet.rectangle))
+                    if (_bossOne.rectangle.Intersects(bullet.SpriteBoundry))
                     {
                         sprite.IsRemoved = true;
                         

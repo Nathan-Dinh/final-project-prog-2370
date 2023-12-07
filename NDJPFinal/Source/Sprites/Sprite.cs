@@ -35,11 +35,11 @@ namespace NDJPFinal.Source.Sprites
 
         public Sprite(Texture2D texture, float layer)
         {
-            this._texture = texture;
-            this._layer = layer;
-            this.LinearVelcitoy = 6f;
-            this.LifeSpan = 0f;
-            this.IsRemoved= false;
+            _texture = texture;
+            _layer = layer;
+            LinearVelcitoy = 6f;
+            LifeSpan = 0f;
+            IsRemoved = false;
             Origin = new Vector2(_texture.Width / 2, _texture.Height / 2);
         }
 
@@ -55,7 +55,7 @@ namespace NDJPFinal.Source.Sprites
 
         public object Clone()
         {
-            return this.MemberwiseClone();
+            return MemberwiseClone();
         }
 
 

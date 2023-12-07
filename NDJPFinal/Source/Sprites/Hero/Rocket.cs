@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NDJPFinal.Source.Sprites
+namespace NDJPFinal.Source.Sprites.Hero
 {
     internal class Rocket : Sprite
     {
@@ -22,8 +22,8 @@ namespace NDJPFinal.Source.Sprites
 
         public Rocket(Texture2D texture, float layer) : base(texture, layer)
         {
-            this.textureWidth = texture.Width/3;
-            this.textureHeight = texture.Height;
+            textureWidth = texture.Width / 3;
+            textureHeight = texture.Height;
 
             for (int x = 0; x < 4; x++)
             {
@@ -59,7 +59,7 @@ namespace NDJPFinal.Source.Sprites
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(this._texture, this.Position, _sourceRectangles[tracker], Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, this._layer);
+            spriteBatch.Draw(_texture, Position, _sourceRectangles[tracker], Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, _layer);
         }
     }
 }

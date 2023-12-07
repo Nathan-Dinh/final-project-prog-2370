@@ -1,24 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using NDJPFinal.Source.Sprites;
-using System;
+using NDJPFinal.Source.Sprites.Hero;
+using NDJPFinal.Source.Sprites.Boss.BossOne;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Manager
 {
-    internal class ShipCollisionManager : GameComponent
+    internal class HeroManager : GameComponent
     {
-        private Ship _ship;
+        private Hero _ship;
         private ScrolllingBackground _scrollingBackground;
         private List<Sprite> _sprites;
-        private HealthBar _healthBar;
+        private HeroHealthBar _healthBar;
         private float _time;
 
-        public ShipCollisionManager(Game game, Ship ship, ScrolllingBackground scrolllingBackground,HealthBar healthBar,List<Sprite>sprites) : base(game)
+        public HeroManager(Game game, Hero ship, ScrolllingBackground scrolllingBackground,HeroHealthBar healthBar,List<Sprite>sprites) : base(game)
         {
             this._ship = ship;
             this._scrollingBackground = scrolllingBackground;
@@ -36,7 +33,7 @@ namespace NDJPFinal.Source.Manager
                 _ship.Position.X -= _ship.LinearVelcitoy;
             }
 
-            if (_ship.currentKey.IsKeyDown(Keys.Right) && _ship.Position.X + _ship.TextureWidth < _scrollingBackground._frameWidth)
+            if (_ship.currentKey.IsKeyDown(Keys.Right) && _ship.Position.X + _ship.TextureWidth < _scrollingBackground._spriteWidth)
             {
                 _ship.Position.X += _ship.LinearVelcitoy;
             }
@@ -46,7 +43,7 @@ namespace NDJPFinal.Source.Manager
                 _ship.Position.Y -= _ship.LinearVelcitoy;
             }
 
-            if (_ship.currentKey.IsKeyDown(Keys.Down) && _ship.Position.Y + _ship.TextureHeight < _scrollingBackground._frameHeight)
+            if (_ship.currentKey.IsKeyDown(Keys.Down) && _ship.Position.Y + _ship.TextureHeight < _scrollingBackground._spriteHeight)
             {
                 _ship.Position.Y += _ship.LinearVelcitoy;
             }
@@ -56,10 +53,10 @@ namespace NDJPFinal.Source.Manager
                 if (sprite is BossProjectileOne && sprite.Parent is BossOne && (gameTime.TotalGameTime.TotalSeconds - _time) > 2)
                 {
                     BossProjectileOne bullet = (BossProjectileOne)sprite;
-                    if (_ship.rectangle.Intersects(bullet.rectangle))
+                    if (_ship.SpriteBoundry.Intersects(bullet.rectangle))
                     {
                         _healthBar.ChangeHealthBarState();
-                        _ship.shipStatus = _healthBar.HealthBarStatus;
+                        _ship.HeroStatus = _healthBar.HealthBarStatus;
                         if (_healthBar.HealthBarStatus <= 0)
                         {
                             //_ship.IsRemoved= true;

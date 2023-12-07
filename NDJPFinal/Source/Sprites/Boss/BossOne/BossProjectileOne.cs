@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NDJPFinal.Source.Sprites
+namespace NDJPFinal.Source.Sprites.Boss.BossOne
 {
     internal class BossProjectileOne : Sprite
     {
@@ -30,10 +30,10 @@ namespace NDJPFinal.Source.Sprites
 
         public BossProjectileOne(Texture2D texture, float layer) : base(texture, layer)
         {
-            this.textureWidth = texture.Width/ 10;
-            this.textureHeight = texture.Height;
+            textureWidth = texture.Width / 10;
+            textureHeight = texture.Height;
 
-            for (int i = 0; i < 10; i ++)
+            for (int i = 0; i < 10; i++)
             {
                 _sourceRectangles.Add(new Rectangle(textureWidth * i, 0, textureWidth, textureHeight));
             }
@@ -66,7 +66,7 @@ namespace NDJPFinal.Source.Sprites
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(this._texture, this.Position, _sourceRectangles[tracker], Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, this._layer);
+            spriteBatch.Draw(_texture, Position, _sourceRectangles[tracker], Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, _layer);
         }
     }
 }

@@ -2,27 +2,32 @@
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 
-namespace NDJPFinal.Source.Sprites
+namespace NDJPFinal.Source.Sprites.Hero
 {
-    internal class HealthBar : Sprite
+    internal class HeroHealthBar : Sprite
     {
+        #region Texture
         private Texture2D _firstLayer;
         private Texture2D _secondLayer;
-        private Rectangle _healthBarFrame;
-        public float HealthBarStatus;
-        private float _time;
+        #endregion
 
-        public HealthBar(Texture2D texture, Texture2D secondLayer, float layer) : base(texture, layer)
+        #region Properties
+        private Rectangle _healthBarFrame;
+        private int _defultHealthBarStatus = 1;
+        public float HealthBarStatus;
+        #endregion
+
+        public HeroHealthBar(Texture2D firstLayer, Texture2D secondLayer, float layer) : base(firstLayer, layer)
         {
-            this._firstLayer = texture;
-            this._secondLayer = secondLayer;
-            this.HealthBarStatus = 1;
-            this._healthBarFrame = new Rectangle(0, 0, (int)(_secondLayer.Width * HealthBarStatus), _secondLayer.Height);
+            _firstLayer = firstLayer;
+            _secondLayer = secondLayer;
+            HealthBarStatus = _defultHealthBarStatus;
+            _healthBarFrame = new Rectangle(0, 0, (int)(_secondLayer.Width * HealthBarStatus), _secondLayer.Height);
         }
 
         public override void Update(GameTime gametime, List<Sprite> sprites)
         {
-            this._healthBarFrame = new Rectangle(0, 0, (int)(_secondLayer.Width * HealthBarStatus), _secondLayer.Height);
+            _healthBarFrame = new Rectangle(0, 0, (int)(_secondLayer.Width * HealthBarStatus), _secondLayer.Height);
             base.Update(gametime, sprites);
         }
 

@@ -157,10 +157,24 @@
 /processorParam:TextureFormat=Color
 /build:explosion.png
 
+#begin Font/HighLightedFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Font/HighLightedFont.spritefont
+
 #begin Font/RandomFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:Font/RandomFont.spritefont
+
+#begin Font/RegularFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Font/RegularFont.spritefont
 
