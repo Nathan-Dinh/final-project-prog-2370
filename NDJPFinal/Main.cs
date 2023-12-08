@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using NDJPFinal.Source.Fonts;
 using NDJPFinal.Source.Manager;
+using NDJPFinal.Source.Scenes.Menu;
 using NDJPFinal.Source.Scenes.Stages;
 using NDJPFinal.Source.Sprites;
 using System;
@@ -18,6 +19,7 @@ namespace NDJPFinal
 
         public StartScene StartScene;
         public StageOneScene StageOneScene;
+        public HelpScene HelpScene;
 
         public Main()
         {
@@ -35,14 +37,17 @@ namespace NDJPFinal
         {
             SpriteBatch = new SpriteBatch(GraphicsDevice);
             StartScene = new StartScene(this);
+            HelpScene = new HelpScene(this);
             this.Components.Add(StageOneScene);
             this.Components.Add(StartScene);
+            this.Components.Add(HelpScene);
             this.StageOneScene = new StageOneScene(this);
             StartScene.show();
         }
 
         protected override void Update(GameTime gameTime)
         {
+            
             if (StartScene.Visible)
             {
                 if (Keyboard.GetState().IsKeyDown(Keys.Enter))
@@ -58,6 +63,7 @@ namespace NDJPFinal
                         case 1:
                             break;
                         case 2:
+                            HelpScene.show();
                             break;
                         case 3:
                             Exit();
@@ -75,6 +81,11 @@ namespace NDJPFinal
             }
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 Exit();
+            if (CheckWin(StageOneScene))
+            {
+                hideAllScenes();
+                StartScene.show();
+            }
 
             base.Update(gameTime);
         }
@@ -98,6 +109,18 @@ namespace NDJPFinal
                    sceneTest.hide();
 
                 }
+            }
+        }
+
+        public bool CheckWin(StageOneScene stageOneScene)
+        {
+            if (StageOneScene.GameWin) 
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
 

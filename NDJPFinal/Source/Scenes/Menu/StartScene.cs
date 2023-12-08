@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using NDJPFinal;
-using NDJPFinal.Source.Scenes;
 using NDJPFinal.Source.Sprites;
+using JP_ND_FinalProject.Scenes;
 
-namespace JP_ND_FinalProject.Scenes
+namespace NDJPFinal.Source.Scenes.Menu
 {
-    public class StartScene : GameScene 
+    public class StartScene : GameScene
     {
         SpriteBatch spriteBatch;
         MenuComponent menu;
@@ -23,8 +23,8 @@ namespace JP_ND_FinalProject.Scenes
             SpriteFont regular = game1.Content.Load<SpriteFont>("Font/RegularFont");
             SpriteFont highlited = game1.Content.Load<SpriteFont>("Font/HighlightedFont");
             menu = new MenuComponent(game1, spriteBatch, regular, highlited,
-                new Vector2(265, 175), new string[] { "START", "OPTIONS", "HELP", "EXIT" },
-                Color.White, Color.Red) ;
+                new Vector2(250, 175), new string[] { "START", "OPTIONS", "HELP", "EXIT" },
+                Color.White, Color.Red);
 
             this.Components.Add(menu);
         }

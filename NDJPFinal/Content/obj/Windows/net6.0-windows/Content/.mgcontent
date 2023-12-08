@@ -4,7 +4,14 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/ARROWDOWN.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/ARROWLEFT.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/ARROWRIGHT.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/ARROWUP.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/BACKSPACEALTERNATIVE (1).png</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/SpaceSpriteSheet.png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/Window_Header (1).png</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/Window_Header (3).png</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Background/Window_Header.png</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Boss/BossOne-Squid/Squid Full sheet orange (1).png</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/2d/Hero/greenbar (2) (1).png</File>
@@ -22,6 +29,13 @@
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Font/RegularFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

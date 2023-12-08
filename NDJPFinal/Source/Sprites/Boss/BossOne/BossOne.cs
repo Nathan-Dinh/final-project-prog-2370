@@ -1,5 +1,7 @@
-﻿using Microsoft.Xna.Framework;
+﻿using JP_ND_FinalProject.Scenes;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using NDJPFinal.Source.Scenes.Stages;
 using NDJPFinal.Source.Sprites.Hero;
 using System;
 using System.Collections.Generic;
@@ -67,7 +69,7 @@ namespace NDJPFinal.Source.Sprites.Boss.BossOne
         public override void Update(GameTime gametime, List<Sprite> sprites)
         {
 
-            if (!ifHit)
+            if (!IsRemoved)
             {
                 if (BossStatus <= 0.75f)
                 {
@@ -94,6 +96,10 @@ namespace NDJPFinal.Source.Sprites.Boss.BossOne
                         _spriteTime = (float)gametime.TotalGameTime.TotalSeconds;
                     }
                 }
+            }
+            else if(IsRemoved)
+            {
+                StageOneScene.GameWin = true;
             }
 
             base.Update(gametime, sprites);

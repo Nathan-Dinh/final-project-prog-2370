@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using NDJPFinal.Source.Sprites;
 using System.Collections.Generic;
 
-namespace NDJPFinal.Source.Scenes
+namespace NDJPFinal.Source.Scenes.Menu
 {
     internal class MenuComponent : DrawableGameComponent
     {
@@ -30,7 +30,7 @@ namespace NDJPFinal.Source.Scenes
             this.regularColor = regularColor;
             this.highlightColor = highlightColor;
             var backgroundTexture = game.Content.Load<Texture2D>("2d/Background/SpaceSpriteSheet");
-            backgroundTextureTwo = game.Content.Load<Texture2D>("2d/Background/Window_Header");
+            backgroundTextureTwo = game.Content.Load<Texture2D>("2d/Background/Window_Header (1)");
             randomFont = game.Content.Load<SpriteFont>("Font/RandomFont");
 
             _sprites = new List<Sprite>();
@@ -54,7 +54,7 @@ namespace NDJPFinal.Source.Scenes
 
             oldState = ks;
 
-            scrolllingBackground.Update(gameTime,_sprites);
+            scrolllingBackground.Update(gameTime, _sprites);
 
             base.Update(gameTime);
         }
@@ -64,7 +64,7 @@ namespace NDJPFinal.Source.Scenes
             spriteBatch.Begin();
             scrolllingBackground.Draw(spriteBatch);
             spriteBatch.Draw(backgroundTextureTwo, new Vector2(150, 100), Color.White);
-            spriteBatch.DrawString(randomFont, "Galactic Defender", new Vector2(190,450), Color.Black);
+            spriteBatch.DrawString(randomFont, "Galactic Defender", new Vector2(190, 450), Color.Black);
             for (int i = 0; i < items.Length; i++)
             {
                 if (i == selectedIndex)

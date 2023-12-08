@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using NDJPFinal.Source.Scenes.Stages;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -13,11 +14,13 @@ namespace NDJPFinal.Source.Sprites.Hero
         public Bullet Bullet;
         public Rocket Rocket;
         #endregion
+
         #region Animation
         private Texture2D _currentTexture;
         private Texture2D _heroTexture;
         private Texture2D _deathTexture;
         #endregion
+
         #region Properties
         private List<Rectangle> _heroAnimationFrames;
         private List<Rectangle> _deathAnimationFrames;
@@ -111,6 +114,7 @@ namespace NDJPFinal.Source.Sprites.Hero
                 {
                     SetDeathAnimation();
                     IsDead = true;
+                    StageOneScene.GameWin = true;
                 }
 
                 if (gametime.TotalGameTime.Seconds - _time < 4)

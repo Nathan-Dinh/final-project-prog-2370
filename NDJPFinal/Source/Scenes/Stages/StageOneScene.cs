@@ -11,8 +11,10 @@ namespace NDJPFinal.Source.Scenes.Stages
 {
     public class StageOneScene : GameScene
     {
+        public static bool GameWin;
         public StageOneScene(Game game) : base(game)
         {
+            GameWin = false;
             var actuallyGame = new StageOne(game);
             Components.Add(actuallyGame);
         }
