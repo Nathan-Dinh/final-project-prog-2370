@@ -1,29 +1,32 @@
-﻿using JP_ND_FinalProject.Scenes;
+﻿/*
+ * Author : Nathan Dinh
+ * 
+ * Revision: Nathan Dinh Decemeber 10
+ */
+using JP_ND_FinalProject.Scenes;
 using Microsoft.Xna.Framework;
 
 namespace NDJPFinal.Source.Scenes.Stages
 {
     public class StageOneScene : GameScene
     {
+        // A public static boolean variable named GameResult, initialized to false
         public static bool GameResult = false;
 
-        public StageOne stageOne;
+        // Declaration of a 'stageOne' instance of the 'StageOne' class
+        public StageOne StageOne;
+
+        // Constructor for the 'StageOneScene' class that takes a 'game' parameter
         public StageOneScene(Game game) : base(game)
         {
+            // Casting the 'Game' object to type 'Main'
             Main game1 = (Main)Game;
-            stageOne = new StageOne(game1);
-            Components.Add(stageOne);
-        }
 
-        public void ResetStage(Game game) 
-        {
-            GameResult = false;
-            game.Components.Remove(stageOne.heroManager);
-            game.Components.Remove(stageOne.bossOneManager);
-            Components.Remove(stageOne);
-            stageOne = new StageOne(game);
-            Components.Add(stageOne);
+            // Creating a new instance of 'StageOne' and assigning it to the 'stageOne' field
+            StageOne = new StageOne(game1);
 
+            // Adding the 'stageOne' component to the list of components in 'StageOneScene'
+            Components.Add(StageOne);
         }
     }
 }

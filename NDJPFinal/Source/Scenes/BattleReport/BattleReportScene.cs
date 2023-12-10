@@ -1,10 +1,10 @@
-﻿using JP_ND_FinalProject.Scenes;
+﻿/*
+ * Author : Nathan Dinh
+ * 
+ * Revision: Nathan Dinh Decemeber 10
+ */
+using JP_ND_FinalProject.Scenes;
 using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Scenes.BattleReport
 {
@@ -14,10 +14,17 @@ namespace NDJPFinal.Source.Scenes.BattleReport
 
         public BattleReportScene(Game game) : base(game)
         {
+            // Cast the 'game' instance as 'Main' class
             Main game1 = game as Main;
-            var spriteBactch = game1.SpriteBatch;
-            BattleReportComponent = new BattleReportComponent(game, spriteBactch);
-              this.Components.Add(BattleReportComponent);
+
+            // Retrieve the SpriteBatch from the Main class instance
+            var spriteBatch = game1.SpriteBatch;
+
+            // Create a new BattleReportComponent instance with the retrieved spriteBatch
+            BattleReportComponent = new BattleReportComponent(game, spriteBatch);
+
+            // Add the BattleReportComponent to the Components collection of the current instance
+            this.Components.Add(BattleReportComponent);
         }
     }
 }

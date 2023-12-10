@@ -1,4 +1,9 @@
-﻿using Microsoft.Xna.Framework;
+﻿/*
+ * Author : Nathan Dinh
+ * 
+ * Revision: Nathan Dinh Decemeber 10
+ */
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using NDJPFinal.Source.Global;
 using NDJPFinal.Source.Scenes.Stages;
@@ -12,19 +17,27 @@ namespace NDJPFinal.Source.Manager
 {
     public class BossOneManager : GameComponent
     {
-        private Bullet _bullet;
-        private SoundEffect _soundEffect;
-        private SoundEffect _soundEffect2;
-        private BossOne _bossOne;
-        private ScrolllingBackground _scrolllingBackground;
-        private BossOneHealthBar _bossOneHealthBar;
-        Random random = new Random();
-        private List<Sprite> _sprites;
-        public float BossStatus = 1;
-        public float speedOne;
-        public float speedTwo;
-        private bool soundFlag = false;
-        private bool soundFlag2 = false;
+        private SoundEffect _soundEffect; // Sound effect variable 1
+
+        private SoundEffect _soundEffect2; // Sound effect variable 2
+
+        private BossOne _bossOne; // Instance of a BossOne class
+
+        private ScrolllingBackground _scrolllingBackground; // Instance of a ScrolllingBackground class
+
+        private BossOneHealthBar _bossOneHealthBar; // Instance of a BossOneHealthBar class
+
+        private Random _random = new Random(); // Random number generator instance
+
+        private List<Sprite> _sprites; // List to hold Sprite instances
+
+        public float BossStatus = 1; // Variable to represent Boss status (initially set to 1)
+
+        public float SpeedOne; // Variable for speed (not initialized)
+
+        public float SpeedTwo; // Another variable for speed (not initialized)
+
+        private bool _soundFlag = false; // Boolean flag variable initialized as false
 
         public BossOneManager(Game game, ScrolllingBackground scrolllingBackground, BossOne bossOne, BossOneHealthBar bossOneHealthBar, List<Sprite> sprite) : base(game)
         {
@@ -40,68 +53,77 @@ namespace NDJPFinal.Source.Manager
         {
             if (BossStatus <= 0.30)
             {
-                _bossOne._speed = random.Next(6, 10);
-                _bossOne.attackIntervel = 0.2f;
-                speedOne = random.Next(7, 100);
-                speedTwo = random.Next(0, 20);
+                // Adjust boss properties when health is less than or equal to 30%
+                _bossOne._speed = _random.Next(6, 10);
+                _bossOne.AttackIntervel = 0.2f;
+                SpeedOne = _random.Next(7, 100);
+                SpeedTwo = _random.Next(0, 20);
             }
             else if (BossStatus <= 0.50)
             {
-                _bossOne.attackIntervel = 0.4f;
-                _bossOne._speed = random.Next(3, 3);
-                speedOne = random.Next(8, 10);
-                speedTwo = random.Next(0, 16);
-                if (!soundFlag)
+                // Adjust boss properties when health is less than or equal to 50%
+                _bossOne.AttackIntervel = 0.4f;
+                _bossOne._speed = _random.Next(3, 3); // <-- Appears to be a constant value; might need correction
+                SpeedOne = _random.Next(8, 10);
+                SpeedTwo = _random.Next(0, 16);
+
+                // Check if sound flag is false and play the sound effect
+                if (!_soundFlag)
                 {
                     _soundEffect.Play();
-                    soundFlag = true;
+                    _soundFlag = true;
                 }
             }
             else if (BossStatus <= 0.80)
             {
-                _bossOne.attackIntervel = 0.5f;
-                _bossOne._speed = random.Next(2, 3);
-                speedOne = random.Next(6, 7);
-                speedTwo = random.Next(0, 13);
+                // Adjust boss properties when health is less than or equal to 80%
+                _bossOne.AttackIntervel = 0.5f;
+                _bossOne._speed = _random.Next(2, 3);
+                SpeedOne = _random.Next(6, 7);
+                SpeedTwo = _random.Next(0, 13);
             }
             else
             {
-                _bossOne.attackIntervel = 0.6f;
-                _bossOne._speed = random.Next(1, 3);
-                speedOne = random.Next(4, 7);
-                speedTwo = random.Next(0, 10);
+                // Adjust boss properties when health is above 80%
+                _bossOne.AttackIntervel = 0.6f;
+                _bossOne._speed = _random.Next(1, 3);
+                SpeedOne = _random.Next(4, 7);
+                SpeedTwo = _random.Next(0, 10);
             }
 
+            // Adjust boss direction based on certain conditions and position
             if (_bossOne.Position.X + _bossOne.TextureWidth / 2 < 0)
             {
-                _bossOne._direction = new Vector2(speedOne, speedTwo);
+                _bossOne.Direction = new Vector2(SpeedOne, SpeedTwo);
             }
             if (_bossOne.Position.Y < 0)
             {
-                _bossOne._direction = new Vector2(-speedOne, speedTwo);
+                _bossOne.Direction = new Vector2(-SpeedOne, SpeedTwo);
             }
-            if (_bossOne.Position.X + _bossOne.TextureWidth > _scrolllingBackground._spriteWidth)
+            if (_bossOne.Position.X + _bossOne.TextureWidth > _scrolllingBackground.SpriteWidth)
             {
-                _bossOne._direction = new Vector2(-speedOne, -speedTwo);
+                _bossOne.Direction = new Vector2(-SpeedOne, -SpeedTwo);
             }
-            if (_bossOne.Position.Y + _bossOne.TextureHeight / 2 > _scrolllingBackground._spriteWidth / 2)
+            if (_bossOne.Position.Y + _bossOne.TextureHeight / 2 > _scrolllingBackground.SpriteWidth / 2)
             {
-                _bossOne._direction = new Vector2(speedOne, -speedTwo);
+                _bossOne.Direction = new Vector2(SpeedOne, -SpeedTwo);
             }
 
+            // Check for collisions between boss and hero's bullets
             foreach (Sprite sprite in _sprites)
             {
                 if (sprite is Bullet && sprite.Parent is Hero)
                 {
                     Bullet bullet = (Bullet)sprite;
 
-                    if (_bossOne.rectangle.Intersects(bullet.SpriteBoundry))
+                    if (_bossOne.Collision.Intersects(bullet.SpriteBoundry))
                     {
                         sprite.IsRemoved = true;
                         BattleReportStats.AmmoHits++;
 
                         if (_bossOneHealthBar.HealthBarStatus <= 0)
                         {
+                            // Update mission status and boss status when health bar is empty
                             StageOneScene.GameResult = true;
                             BattleReportStats.MissionStatus = "SUCCESS";
                             _bossOne.IsRemoved = true;

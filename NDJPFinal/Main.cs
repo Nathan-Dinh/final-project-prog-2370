@@ -1,4 +1,9 @@
-﻿using JP_ND_FinalProject.Scenes;
+﻿/*
+ * Author : Nathan Dinh
+ * 
+ * Revision: Nathan Dinh Decemeber 10
+ */
+using JP_ND_FinalProject.Scenes;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -18,13 +23,15 @@ namespace NDJPFinal
         private GraphicsDeviceManager _graphics;
         public SpriteBatch SpriteBatch;
 
+        #region Scene 
         public StartScene StartScene;
         public StageOneScene StageOneScene;
         public HelpScene HelpScene;
         public AboutScene AboutScene;
-        public BattleReportScene battleReportScene;
+        public BattleReportScene BattleReportScene;
+        #endregion
 
-        public SoundEffect cursorReady;
+        private SoundEffect _cursorReady;
 
         public Main()
         {
@@ -45,11 +52,11 @@ namespace NDJPFinal
             this.StartScene = new StartScene(this);
             this.HelpScene = new HelpScene(this);
             this.AboutScene = new AboutScene(this);
-            this.battleReportScene = new BattleReportScene(this);
+            this.BattleReportScene = new BattleReportScene(this);
 
-            cursorReady = this.Content.Load<SoundEffect>("Sound/Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2)");
+            _cursorReady = this.Content.Load<SoundEffect>("Sound/Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2)");
 
-            this.Components.Add(battleReportScene);
+            this.Components.Add(BattleReportScene);
             this.Components.Add(StageOneScene);
             this.Components.Add(StartScene);
             this.Components.Add(HelpScene);
@@ -64,7 +71,7 @@ namespace NDJPFinal
                 if (Keyboard.GetState().IsKeyDown(Keys.Enter))
                 {
                     int selectedScene = StartScene.getSelectedIndex();
-                    hideAllScenes();
+                    HideAllScenes();
                     switch (selectedScene)
                     {
                         case 0:
@@ -81,20 +88,20 @@ namespace NDJPFinal
                             Exit();
                             break;
                     }
-                    cursorReady.Play();
+                    _cursorReady.Play();
                 }
             }
             else
             {
                 if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 {
-                    hideAllScenes();
+                    HideAllScenes();
                     StartScene.show();
-                }else if (StageOneScene.GameResult)
+                }else if (StageOneScene.GameResult) //Flag that checks if the there is ar result in the StageOneScene
                 {
-                    hideAllScenes();
-                    StageOneScene.GameResult = false;
-                    battleReportScene.show();
+                    HideAllScenes();
+                    StageOneScene.GameResult = false;//Resets the flag for the next game
+                    BattleReportScene.show();
                 }
             }
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
@@ -111,15 +118,17 @@ namespace NDJPFinal
             base.Draw(gameTime);
         }
 
-        public void hideAllScenes()
+
+        //This function resets and all the scenes to keep consistency throughout runtime
+        protected void HideAllScenes()
         {
             this.Components.Clear();
             this.StageOneScene = new StageOneScene(this);
             this.StartScene = new StartScene(this);
             this.HelpScene = new HelpScene(this);
             this.AboutScene = new AboutScene(this);
-            this.battleReportScene = new BattleReportScene(this);
-            this.Components.Add(battleReportScene);
+            this.BattleReportScene = new BattleReportScene(this);
+            this.Components.Add(BattleReportScene);
             this.Components.Add(StageOneScene);
             this.Components.Add(StartScene);
             this.Components.Add(HelpScene);
@@ -127,6 +136,7 @@ namespace NDJPFinal
 
             foreach (var scene in this.Components)
             {
+                //Checks if the component is a scene or not
                 if (scene is GameScene)
                 {
                    var sceneTest = (GameScene) scene;
@@ -137,6 +147,8 @@ namespace NDJPFinal
         }
     }
 
+
+    //Main class
     public static class Program 
     {
         [STAThread]

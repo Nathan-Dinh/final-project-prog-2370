@@ -1,17 +1,18 @@
-﻿using Microsoft.Xna.Framework;
+﻿/*
+ * Author : Nathan Dinh
+ * 
+ * Revision: Nathan Dinh Decemeber 10
+ */
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using SharpDX.Direct3D9;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Sprites
 {
     public class ScrolllingBackground : Sprite
     {
-        #region Texture
+        #region 2DTexture
         private Texture2D _backgroundTexture;
         #endregion
 
@@ -27,9 +28,9 @@ namespace NDJPFinal.Source.Sprites
 
         private int _columns = 3;
 
-        public int _spriteWidth;
+        public int SpriteWidth;
 
-        public int _spriteHeight;
+        public int SpriteHeight;
 
         private Vector2 _postion1, _postion2;
 
@@ -40,36 +41,46 @@ namespace NDJPFinal.Source.Sprites
 
         public ScrolllingBackground(Texture2D texture,float layer,Vector2 position) : base(texture,layer)
         {
+            // Assigns the background texture
             this._backgroundTexture = texture;
-            this._velocity = new Vector2(0,2);
+
+            // Sets the velocity for scrolling the background vertically
+            this._velocity = new Vector2(0, 2);
+
+            // Initializes variables to handle current images
             this._currentImage1 = 0;
             this._currentImage2 = 1;
+
+            // Determines the width and height of each sprite frame
             var frameWidth = (texture.Width / 3);
             var frameHeight = (texture.Height / 2);
-            this._spriteWidth= frameWidth;
-            this._spriteHeight= frameHeight;
+            this.SpriteWidth = frameWidth;
+            this.SpriteHeight = frameHeight;
 
+            // Initializes lists to store animation frames for the background
             _currentAnimationFrames = new List<Rectangle>();
             _backgroundAnimationFrames = new List<Rectangle>();
 
+            // Generates rectangles for each frame of the background animation
             for (int r = 0; r < _rows; r++)
             {
                 for (int c = 0; c < _columns; c++)
                 {
-                    _backgroundAnimationFrames.Add(new Rectangle((c * frameWidth)  ,(r * frameHeight), frameWidth, frameHeight));
+                    _backgroundAnimationFrames.Add(new Rectangle((c * frameWidth), (r * frameHeight), frameWidth, frameHeight));
                 }
             }
 
+            // Sets the current animation frames to the generated background animation frames
             _currentAnimationFrames = _backgroundAnimationFrames;
 
+            // Sets the initial positions for the two background sections
             this._postion1 = position;
-            this._postion2 = new Vector2(_postion1.X,(_postion1.Y -_currentAnimationFrames[0].Height));
+            this._postion2 = new Vector2(_postion1.X, (_postion1.Y - _currentAnimationFrames[0].Height));
         }
 
         public override void Update(GameTime gameTime, List<Sprite> sprites)
         {
             MoveBackground(gameTime);
-
             base.Update(gameTime, sprites);
         }
 
@@ -81,20 +92,28 @@ namespace NDJPFinal.Source.Sprites
 
         private void MoveBackground(GameTime gameTime)
         {
+            // Update the positions of the two background sections based on their velocity and elapsed time
             this._postion1 += _velocity * (float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.05f;
             this._postion2 += _velocity * (float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.05f;
 
+            // Check if the first background section has moved beyond its height
             if (_postion1.Y > _currentAnimationFrames[0].Height)
             {
+                // Randomly select a new image for the second section
                 _currentImage2 = random.Next(0, 5);
+
+                // Reset the position of the first section to be above the second section with the new image
                 _postion1.Y = _postion2.Y - _currentAnimationFrames[_currentImage2].Height;
             }
 
+            // Check if the second background section has moved beyond its height
             if (_postion2.Y > _currentAnimationFrames[0].Height)
             {
+                // Randomly select a new image for the first section
                 _currentImage1 = random.Next(0, 5);
-                _postion2.Y = _postion1.X - _currentAnimationFrames[_currentImage1].Height;
 
+                // Reset the position of the second section to be above the first section with the new image
+                _postion2.Y = _postion1.X - _currentAnimationFrames[_currentImage1].Height;
             }
         }
     }

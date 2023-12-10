@@ -1,21 +1,33 @@
-﻿using Microsoft.Xna.Framework;
+﻿/*
+ * Author : Nathan Dinh
+ * 
+ * Revision: Nathan Dinh Decemeber 10
+ */
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
+using NDJPFinal.Source.Global;
 using NDJPFinal.Source.Manager;
 using NDJPFinal.Source.Sprites;
-using NDJPFinal.Source.Sprites.Hero;
 using NDJPFinal.Source.Sprites.Boss.BossOne;
+using NDJPFinal.Source.Sprites.Hero;
 using System.Collections.Generic;
-using Microsoft.Xna.Framework.Audio;
-using NDJPFinal.Source.Global;
 
 namespace NDJPFinal.Source.Scenes.Stages
 {
     public class StageOne : DrawableGameComponent
     {
+        // Represents the drawing surface used to draw sprites
         private SpriteBatch _spriteBatch;
+
+        // List to store the sprites
         private List<Sprite> _sprites;
-        public HeroManager heroManager;
-        public BossOneManager bossOneManager;
+
+        // Manages instances of the Hero character
+        public HeroManager HeroManager;
+
+        // Manages instances of the BossOne character
+        public BossOneManager BossOneManager;
         public StageOne(Game game) : base(game)
         {
             #region Textures
@@ -36,7 +48,7 @@ namespace NDJPFinal.Source.Scenes.Stages
             var bullterTexture = game.Content.Load<Texture2D>("2d/Wepon/Main ship weapon - Projectile - Auto cannon bullet");
             #endregion
 
-            var soundEffect = game.Content.Load<SoundEffect>("Sound/zap-testground");
+            var damageSoundEffect = game.Content.Load<SoundEffect>("Sound/zap-testground");
 
             #region Initialization  
             var backGroundTexture = new ScrolllingBackground(backgroundTexture, 0, new Vector2(0, 0));
@@ -46,7 +58,7 @@ namespace NDJPFinal.Source.Scenes.Stages
                 Position = new Vector2(400, 700),
                 Bullet = new Bullet(bullterTexture, 0.1f),
                 Rocket = new Rocket(rocketTexture, 0.1f),
-                SoundEffect = soundEffect
+                DamageSoundEffect = damageSoundEffect
             };
             var bossOne = new BossOne(bossOneTexture, 0.2f, 4)
             {
@@ -84,35 +96,54 @@ namespace NDJPFinal.Source.Scenes.Stages
 
         public override void Update(GameTime gameTime)
         {
-
+            // Iterate through each sprite in the _sprites list and update them
             foreach (var sprite in _sprites.ToArray())
                 sprite.Update(gameTime, _sprites);
+
+            // Perform any post-update actions or additional processing related to sprites
             PostUpdate();
+
+            // Update the BattleReportStats, possibly to track game-related statistics or data
             BattleReportStats.UpdateDateTime();
+
+            // Call the base class's Update method to handle any other necessary updates
             base.Update(gameTime);
         }
 
 
         public override void Draw(GameTime gameTime)
         {
+            // Begins a new batch of sprite drawing with a specific sorting mode (FrontToBack)
             _spriteBatch.Begin(SpriteSortMode.FrontToBack);
+
+            // Iterates through each sprite in the _sprites list and draws them using the _spriteBatch
             foreach (var sprite in _sprites)
                 sprite.Draw(_spriteBatch);
+
+            // Ends the current sprite batch, finalizing the drawing of sprites
             _spriteBatch.End();
 
+            // Calls the base class's Draw method to handle any other necessary drawing operations
             base.Draw(gameTime);
         }
+
         private void PostUpdate()
         {
+            // Iterate through the _sprites list using a for loop
             for (int i = 0; i < _sprites.Count; i++)
             {
+                // Check if the IsRemoved property of the current sprite at index 'i' is true
                 if (_sprites[i].IsRemoved)
                 {
+                    // If IsRemoved is true for the sprite at index 'i':
+
+                    // Remove the sprite from the _sprites list at index 'i'
                     _sprites.RemoveAt(i);
+
+                    // Decrement 'i' by 1 to account for the removal of the sprite
                     i--;
                 }
             }
         }
-
     }
 }

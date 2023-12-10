@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NDJPFinal.Source.Sprites.Sprite" Collapsed="true">
+    <Position X="6.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAACAQAAAgAwAAAAQAIAAAgAAAAABAAigAgAADA=</HashCode>
+      <FileName>Source\Sprites\Sprite.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.Boss.BossOne.BossOne" Collapsed="true">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAgAAAAIIgQkSEACAAAAAAAAAAAAAABAwAAAAQQAA=</HashCode>
+      <FileName>Source\Sprites\Boss\BossOne\BossOne.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.Boss.BossOne.BossOneHealthBar" Collapsed="true">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgEAAAAAAAAAEAEAAAAAAAAAgQEAAAA=</HashCode>
+      <FileName>Source\Sprites\Boss\BossOne\BossOneHealthBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.Boss.BossOne.BossProjectileOne" Collapsed="true">
+    <Position X="12.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAAIAgAgSAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Sprites\Boss\BossOne\BossProjectileOne.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.HelpPage.ArrowKeys" Collapsed="true">
+    <Position X="14.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAoIAAAAAAAwSAAAAQAAAIAAEABgAEAAAAAAAAEAA=</HashCode>
+      <FileName>Source\Sprites\HelpPage\ArrowKeys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.HelpPage.Spacebar" Collapsed="true">
+    <Position X="17" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAEIAAAAAAIAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Source\Sprites\HelpPage\Spacebar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.Hero.Bullet" Collapsed="true">
+    <Position X="19.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAQAAAAAAAAgAgSAAAAAAAAIAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Source\Sprites\Hero\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.Hero.Hero" Collapsed="true">
+    <Position X="21.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASIgAEABABgBkSAAAAAEYAAAIAAAAAQAABCAAAUAAA=</HashCode>
+      <FileName>Source\Sprites\Hero\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.Hero.HeroHealthBar" Collapsed="true">
+    <Position X="23.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgEAAAAAAAAAEAEAAAAAAAAEAQEAAAA=</HashCode>
+      <FileName>Source\Sprites\Hero\HeroHealthBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.Hero.Rocket" Collapsed="true">
+    <Position X="26" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAgAgSAAAAEAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Source\Sprites\Hero\Rocket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Sprites.ScrolllingBackground" Collapsed="true">
+    <Position X="28.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAQgIAAgCAAAAAAAAQAAAAAAAEEAQIAAAEAUA=</HashCode>
+      <FileName>Source\Sprites\ScrolllingBackground.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

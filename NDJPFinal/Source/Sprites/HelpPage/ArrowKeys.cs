@@ -1,4 +1,9 @@
-﻿using Microsoft.Xna.Framework;
+﻿/*
+ * Author : Nathan Dinh
+ * 
+ * Revision: Nathan Dinh Decemeber 10
+ */
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -8,109 +13,135 @@ namespace NDJPFinal.Source.Sprites.HelpPage
 {
     public class ArrowKeys : Sprite
     {
-        public Texture2D textureUPArrow;
-        public Texture2D textureDownArrow;
-        public Texture2D textureLeftArrow;
-        public Texture2D textureRightArrow;
+        #region 2DTexture
+        // Texture for the up arrow
+        private Texture2D _textureUPArrow;
 
-        public List<Rectangle> upArrowFrames;
-        public List<Rectangle> downArrowFrames;
-        public List<Rectangle> leftArrowFrames;
-        public List<Rectangle> rightArrowFrames;
+        // Texture for the down arrow
+        private Texture2D _textureDownArrow;
 
+        // Texture for the left arrow
+        private Texture2D _textureLeftArrow;
+
+        // Texture for the right arrow
+        private Texture2D _textureRightArrow;
+        #endregion
+
+        #region List of Frames
+        // Lists to store rectangles representing frames for each arrow direction's animation
+        private List<Rectangle> _upArrowFrames;
+        private List<Rectangle> _downArrowFrames;
+        private List<Rectangle> _leftArrowFrames;
+        private List<Rectangle> _rightArrowFrames;
+        #endregion
+
+        // Width of the individual frame for each arrow direction
         public int TextureWidth;
+        // Height of the individual frame for each arrow direction
         public int TextureHeight;
 
 
-        public int upArrowFramesTracker;
-        public int downArrowFramesTracker;
-        public int rightArrowFramesTracker;
-        public int leftArrowFramesTracker;
-
+        #region Frame Tracker
+        // Trackers to keep the current frame index for each arrow direction's animation
+        private int _upArrowFramesTracker;
+        private int _downArrowFramesTracker;
+        private int _rightArrowFramesTracker;
+        private int _leftArrowFramesTracker;
+        #endregion
         public ArrowKeys(Texture2D textureUpArrow,
             Texture2D textureDownArrow,
             Texture2D textureRightArrow,
             Texture2D textureLeftArrow, float layer) : base(textureUpArrow, layer)
         {
-            this.textureUPArrow = textureUpArrow;
-            this.textureDownArrow = textureDownArrow;
-            this.textureLeftArrow = textureLeftArrow;
-            this.textureRightArrow = textureRightArrow;
+            // Assign textures for each arrow direction (up, down, left, right)
+            this._textureUPArrow = textureUpArrow;
+            this._textureDownArrow = textureDownArrow;
+            this._textureLeftArrow = textureLeftArrow;
+            this._textureRightArrow = textureRightArrow;
 
-            this.TextureWidth = textureUPArrow.Width / 2;
-            this.TextureHeight = textureUPArrow.Height;
+            // Calculate dimensions of frames for each arrow direction based on the up arrow texture
+            this.TextureWidth = _textureUPArrow.Width / 2; // Assuming the texture is divided into 2 frames horizontally
+            this.TextureHeight = _textureUPArrow.Height;
 
-            this.upArrowFrames = new List<Rectangle>();
-            this.downArrowFrames = new List<Rectangle>();
-            this.leftArrowFrames = new List<Rectangle>();
-            this.rightArrowFrames = new List<Rectangle>();
+            // Initialize lists to store frames for each arrow direction
+            this._upArrowFrames = new List<Rectangle>();
+            this._downArrowFrames = new List<Rectangle>();
+            this._leftArrowFrames = new List<Rectangle>();
+            this._rightArrowFrames = new List<Rectangle>();
 
-            upArrowFramesTracker = 0;
-            downArrowFramesTracker = 0;
-            rightArrowFramesTracker = 0;
-            leftArrowFramesTracker = 0;
+            // Initialize arrow frames trackers to 0 (assuming they represent the current frame index)
+            _upArrowFramesTracker = 0;
+            _downArrowFramesTracker = 0;
+            _rightArrowFramesTracker = 0;
+            _leftArrowFramesTracker = 0;
 
-            for (int i = 0; i < 2; i++)
+            // Create rectangles for each frame of each arrow direction's animation
+            for (int i = 0; i < 2; i++) // Assuming 2 frames for each arrow direction
             {
-                upArrowFrames.Add(new Rectangle(TextureWidth * i, 0, TextureWidth, TextureHeight));
-                downArrowFrames.Add(new Rectangle(TextureWidth * i, 0, TextureWidth, TextureHeight));
-                leftArrowFrames.Add(new Rectangle(TextureWidth * i, 0, TextureWidth, TextureHeight));
-                rightArrowFrames.Add(new Rectangle(TextureWidth * i, 0, TextureWidth, TextureHeight));
+                _upArrowFrames.Add(new Rectangle(TextureWidth * i, 0, TextureWidth, TextureHeight));
+                _downArrowFrames.Add(new Rectangle(TextureWidth * i, 0, TextureWidth, TextureHeight));
+                _leftArrowFrames.Add(new Rectangle(TextureWidth * i, 0, TextureWidth, TextureHeight));
+                _rightArrowFrames.Add(new Rectangle(TextureWidth * i, 0, TextureWidth, TextureHeight));
             }
         }
 
 
         public override void Update(GameTime gametime, List<Sprite> sprites)
         {
-            this.previousKey = this.currentKey;
-            this.currentKey = Keyboard.GetState();
+            // Update the PreviousKey and CurrentKey states to store the keyboard input states
+            this.PreviousKey = this.CurrentKey;
+            this.CurrentKey = Keyboard.GetState();
 
-            if (this.currentKey.IsKeyDown(Keys.Left))
+            // Check if the left arrow key is pressed; if yes, set the left arrow frames tracker to 1, otherwise set it to 0
+            if (this.CurrentKey.IsKeyDown(Keys.Left))
             {
-                leftArrowFramesTracker = 1;
+                _leftArrowFramesTracker = 1;
             }
             else
             {
-                leftArrowFramesTracker = 0;
+                _leftArrowFramesTracker = 0;
             }
 
-            if (this.currentKey.IsKeyDown(Keys.Right))
+            // Check if the right arrow key is pressed; if yes, set the right arrow frames tracker to 1, otherwise set it to 0
+            if (this.CurrentKey.IsKeyDown(Keys.Right))
             {
-                rightArrowFramesTracker = 1;
+                _rightArrowFramesTracker = 1;
             }
             else
             {
-                rightArrowFramesTracker = 0;
+                _rightArrowFramesTracker = 0;
             }
 
-            if (this.currentKey.IsKeyDown(Keys.Down))
+            // Check if the down arrow key is pressed; if yes, set the down arrow frames tracker to 1, otherwise set it to 0
+            if (this.CurrentKey.IsKeyDown(Keys.Down))
             {
-                downArrowFramesTracker = 1;
+                _downArrowFramesTracker = 1;
             }
             else
             {
-                downArrowFramesTracker = 0;
+                _downArrowFramesTracker = 0;
             }
 
-            if (this.currentKey.IsKeyDown(Keys.Up))
+            // Check if the up arrow key is pressed; if yes, set the up arrow frames tracker to 1, otherwise set it to 0
+            if (this.CurrentKey.IsKeyDown(Keys.Up))
             {
-                upArrowFramesTracker = 1;
+                _upArrowFramesTracker = 1;
             }
             else
             {
-                upArrowFramesTracker = 0;
+                _upArrowFramesTracker = 0;
             }
 
-
+            // Call the base class's Update method to perform additional updates
             base.Update(gametime, sprites);
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(textureUPArrow, Position - new Vector2(0, 80), upArrowFrames[upArrowFramesTracker], Color.White);
-            spriteBatch.Draw(textureDownArrow, Position + new Vector2(0, 0), downArrowFrames[downArrowFramesTracker], Color.White);
-            spriteBatch.Draw(textureLeftArrow, Position - new Vector2(80, 0), leftArrowFrames[leftArrowFramesTracker], Color.White);
-            spriteBatch.Draw(textureRightArrow, Position + new Vector2(80, 0), rightArrowFrames[rightArrowFramesTracker], Color.White);
+            spriteBatch.Draw(_textureUPArrow, Position - new Vector2(0, 80), _upArrowFrames[_upArrowFramesTracker], Color.White);
+            spriteBatch.Draw(_textureDownArrow, Position + new Vector2(0, 0), _downArrowFrames[_downArrowFramesTracker], Color.White);
+            spriteBatch.Draw(_textureLeftArrow, Position - new Vector2(80, 0), _leftArrowFrames[_leftArrowFramesTracker], Color.White);
+            spriteBatch.Draw(_textureRightArrow, Position + new Vector2(80, 0), _rightArrowFrames[_rightArrowFramesTracker], Color.White);
         }
     }
 }
