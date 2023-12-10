@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="NDJPFinal.Source.Sprites.Sprite" Collapsed="true">
-    <Position X="6.75" Y="9.5" Width="1.5" />
+    <Position X="18.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAACAQAAAgAwAAAAQAIAAAgAAAAABAAigAgAADA=</HashCode>
       <FileName>Source\Sprites\Sprite.cs</FileName>
@@ -9,74 +9,169 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.Boss.BossOne.BossOne" Collapsed="true">
-    <Position X="8" Y="4" Width="1.5" />
+    <Position X="19.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAQAgAAAAIIgQkSEACAAAAAAAAAAAAAABAwAAAAQQAA=</HashCode>
       <FileName>Source\Sprites\Boss\BossOne\BossOne.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.Boss.BossOne.BossOneHealthBar" Collapsed="true">
-    <Position X="10.25" Y="4" Width="1.5" />
+    <Position X="8.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAgEAAAAAAAAAEAEAAAAAAAAAgQEAAAA=</HashCode>
       <FileName>Source\Sprites\Boss\BossOne\BossOneHealthBar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.Boss.BossOne.BossProjectileOne" Collapsed="true">
-    <Position X="12.5" Y="4" Width="1.5" />
+    <Position X="21.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAQAAAAAAIAgAgSAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Source\Sprites\Boss\BossOne\BossProjectileOne.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.HelpPage.ArrowKeys" Collapsed="true">
-    <Position X="14.75" Y="4" Width="1.5" />
+    <Position X="10.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAoIAAAAAAAwSAAAAQAAAIAAEABgAEAAAAAAAAEAA=</HashCode>
       <FileName>Source\Sprites\HelpPage\ArrowKeys.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.HelpPage.Spacebar" Collapsed="true">
-    <Position X="17" Y="4" Width="1.5" />
+    <Position X="12.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAgAAAAAEIAAAAAAIAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Source\Sprites\HelpPage\Spacebar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.Hero.Bullet" Collapsed="true">
-    <Position X="19.25" Y="4" Width="1.5" />
+    <Position X="24" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>FAQAAAAAAAAgAgSAAAAAAAAIAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Source\Sprites\Hero\Bullet.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.Hero.Hero" Collapsed="true">
-    <Position X="21.5" Y="4" Width="1.5" />
+    <Position X="15" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EASIgAEABABgBkSAAAAAEYAAAIAAAAAQAABCAAAUAAA=</HashCode>
       <FileName>Source\Sprites\Hero\Hero.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.Hero.HeroHealthBar" Collapsed="true">
-    <Position X="23.75" Y="4" Width="1.5" />
+    <Position X="26.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAgEAAAAAAAAAEAEAAAAAAAAEAQEAAAA=</HashCode>
       <FileName>Source\Sprites\Hero\HeroHealthBar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.Hero.Rocket" Collapsed="true">
-    <Position X="26" Y="4" Width="1.5" />
+    <Position X="17.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAgAgSAAAAEAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Source\Sprites\Hero\Rocket.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NDJPFinal.Source.Sprites.ScrolllingBackground" Collapsed="true">
-    <Position X="28.25" Y="4" Width="1.5" />
+    <Position X="28.5" Y="3" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAQAAQAAQgIAAgCAAAAAAAAQAAAAAAAEEAQIAAAEAUA=</HashCode>
       <FileName>Source\Sprites\ScrolllingBackground.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Main" Collapsed="true">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BASACAAAACAAAwBAAAAAAAAAAQAAAAACQAAAAAAAAAQ=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Program" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JP_ND_FinalProject.Scenes.GameScene" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAoAAAAAAABAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Source\Scenes\GameScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Scenes.BattleReport.BattleReportScene" Collapsed="true">
+    <Position X="3" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Source\Scenes\BattleReport\BattleReportScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Scenes.Menu.GameSetting.AboutScene" Collapsed="true">
+    <Position X="9.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Source\Scenes\Menu\AboutScene\AboutScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Scenes.Menu.HelpScene.HelpScene" Collapsed="true">
+    <Position X="5.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAA=</HashCode>
+      <FileName>Source\Scenes\Menu\HelpScene\HelpScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Scenes.Menu.StartScene.StartScene" Collapsed="true">
+    <Position X="12" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAIAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Source\Scenes\Menu\StartScene\StartScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Scenes.Stages.StageOneScene" Collapsed="true">
+    <Position X="7.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACAAAA=</HashCode>
+      <FileName>Source\Scenes\Stages\StageOneScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Manager.BossOneManager" Collapsed="true">
+    <Position X="14.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAYAAAEAAAAAAAAQAAAAgAAAAADAQgAAAAAAAAAAAAE=</HashCode>
+      <FileName>Source\Managers\BossOneManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Manager.HeroManager" Collapsed="true">
+    <Position X="16.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAZCAAAAAAAgAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Managers\HeroManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NDJPFinal.Source.Global.BattleReportStats" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAKIAAAAAAAAAAAQAAAAAAAIiAAAAQAAAAJBAAAAAA=</HashCode>
+      <FileName>Source\Global\BattleReportStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.DrawableGameComponent" Collapsed="true">
+    <Position X="7.25" Y="5.75" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.GameComponent" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.Game" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
