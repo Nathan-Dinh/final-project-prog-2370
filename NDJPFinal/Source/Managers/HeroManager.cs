@@ -80,6 +80,29 @@ namespace NDJPFinal.Source.Manager
                         _time = (float)gameTime.TotalGameTime.TotalSeconds;
                     }
                 }
+
+                if (sprite is BossOne && (gameTime.TotalGameTime.TotalSeconds - _time) > 1)
+                {
+                    BossOne bossOne = (BossOne)sprite;
+
+                    if (_ship.SpriteBoundry.Intersects(bossOne.rectangle) && !_ship.IsRemoved)
+                    {
+                        _healthBar.ChangeHealthBarState();
+                        _ship.HeroStatus = _healthBar.HealthBarStatus;
+                        BattleReportStats.HitsTaken++;
+
+                        if (_healthBar.HealthBarStatus <= 0)
+                        {
+                            _deathSound.Play();
+                            StageOneScene.GameResult = true;
+                            BattleReportStats.MissionStatus = "FAILURE";
+                            _healthBar.HealthBarStatus = 1;
+                            break;
+                        }
+                        _gettingHit.Play();
+                        _time = (float)gameTime.TotalGameTime.TotalSeconds;
+                    }
+                }
             }
 
             base.Update(gameTime);

@@ -4,16 +4,16 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace NDJPFinal.Source.Scenes.Menu.GameSetting
 {
-    public class GameSettingScene : GameScene
+    public class AboutScene : GameScene
     {
 
-        GameSettingComponent  gameSettingComponent;
-        public GameSettingScene(Game game) : base(game)
+        AboutComponent  gameSettingComponent;
+        public AboutScene(Game game) : base(game)
         {
             Main game1 = (Main)game;
              var spriteBactch = game1.SpriteBatch;
 
-            gameSettingComponent = new GameSettingComponent(game, spriteBactch);
+            gameSettingComponent = new AboutComponent(game, spriteBactch);
             Components.Add(gameSettingComponent);
 
         }

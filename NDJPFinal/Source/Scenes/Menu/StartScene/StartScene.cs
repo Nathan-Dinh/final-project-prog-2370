@@ -22,7 +22,7 @@ namespace NDJPFinal.Source.Scenes.Menu.StartScene
             SpriteFont regular = game1.Content.Load<SpriteFont>("Font/RegularFont");
             SpriteFont highlited = game1.Content.Load<SpriteFont>("Font/HighlightedFont");
             menu = new MenuComponent(game1, spriteBatch, regular, highlited,
-                new Vector2(250, 175), new string[] { "START", "OPTIONS", "HELP", "EXIT" },
+                new Vector2(250, 175), new string[] { "START", "ABOUT", "HELP", "EXIT" },
                 Color.White, Color.White);
 
             Components.Add(menu);

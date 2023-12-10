@@ -109,3 +109,6 @@ E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFi
 E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\retro-video-game-death-95730.xnb
 E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).xnb
 E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\demonic-woman-scream-6333 (mp3cut.net).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\heart-beat-137135.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\monster_hurt_c_08-102842 (mp3cut.net).xnb

@@ -21,7 +21,7 @@ namespace NDJPFinal
         public StartScene StartScene;
         public StageOneScene StageOneScene;
         public HelpScene HelpScene;
-        public GameSettingScene gameSettingScene;
+        public AboutScene AboutScene;
         public BattleReportScene battleReportScene;
 
         public SoundEffect cursorReady;
@@ -44,7 +44,7 @@ namespace NDJPFinal
             this.StageOneScene = new StageOneScene(this);
             this.StartScene = new StartScene(this);
             this.HelpScene = new HelpScene(this);
-            this.gameSettingScene = new GameSettingScene(this);
+            this.AboutScene = new AboutScene(this);
             this.battleReportScene = new BattleReportScene(this);
 
             cursorReady = this.Content.Load<SoundEffect>("Sound/Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2)");
@@ -53,7 +53,7 @@ namespace NDJPFinal
             this.Components.Add(StageOneScene);
             this.Components.Add(StartScene);
             this.Components.Add(HelpScene);
-            this.Components.Add(gameSettingScene);
+            this.Components.Add(AboutScene);
             StartScene.show();
         }
 
@@ -72,7 +72,7 @@ namespace NDJPFinal
                             StageOneScene.show();
                             break;
                         case 1:
-                            gameSettingScene.show();
+                            AboutScene.show();
                             break;
                         case 2:
                             HelpScene.show();
@@ -117,13 +117,13 @@ namespace NDJPFinal
             this.StageOneScene = new StageOneScene(this);
             this.StartScene = new StartScene(this);
             this.HelpScene = new HelpScene(this);
-            this.gameSettingScene = new GameSettingScene(this);
+            this.AboutScene = new AboutScene(this);
             this.battleReportScene = new BattleReportScene(this);
             this.Components.Add(battleReportScene);
             this.Components.Add(StageOneScene);
             this.Components.Add(StartScene);
             this.Components.Add(HelpScene);
-            this.Components.Add(gameSettingScene);
+            this.Components.Add(AboutScene);
 
             foreach (var scene in this.Components)
             {

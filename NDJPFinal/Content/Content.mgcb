@@ -280,6 +280,12 @@
 /processorParam:Quality=Best
 /build:Sound/coin-collect-retro-8-bit-sound-effect-145251.wav
 
+#begin Sound/demonic-woman-scream-6333 (mp3cut.net).wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/demonic-woman-scream-6333 (mp3cut.net).wav
+
 #begin Sound/Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
@@ -292,11 +298,23 @@
 /processorParam:Quality=Best
 /build:Sound/Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).wav
 
+#begin Sound/heart-beat-137135.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/heart-beat-137135.wav
+
 #begin Sound/hurt_c_08-102842.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:Sound/hurt_c_08-102842.wav
+
+#begin Sound/monster_hurt_c_08-102842 (mp3cut.net).wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/monster_hurt_c_08-102842 (mp3cut.net).wav
 
 #begin Sound/retro-video-game-death-95730.wav
 /importer:WavImporter

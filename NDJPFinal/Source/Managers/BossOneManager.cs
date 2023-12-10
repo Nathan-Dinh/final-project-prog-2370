@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using NDJPFinal.Source.Global;
 using NDJPFinal.Source.Scenes.Stages;
 using NDJPFinal.Source.Sprites;
@@ -12,6 +13,8 @@ namespace NDJPFinal.Source.Manager
     public class BossOneManager : GameComponent
     {
         private Bullet _bullet;
+        private SoundEffect _soundEffect;
+        private SoundEffect _soundEffect2;
         private BossOne _bossOne;
         private ScrolllingBackground _scrolllingBackground;
         private BossOneHealthBar _bossOneHealthBar;
@@ -20,6 +23,8 @@ namespace NDJPFinal.Source.Manager
         public float BossStatus = 1;
         public float speedOne;
         public float speedTwo;
+        private bool soundFlag = false;
+        private bool soundFlag2 = false;
 
         public BossOneManager(Game game, ScrolllingBackground scrolllingBackground, BossOne bossOne, BossOneHealthBar bossOneHealthBar, List<Sprite> sprite) : base(game)
         {
@@ -27,36 +32,43 @@ namespace NDJPFinal.Source.Manager
             this._bossOne = bossOne;
             this._sprites = sprite;
             this._bossOneHealthBar = bossOneHealthBar;
+            _soundEffect = game.Content.Load<SoundEffect>("Sound/demonic-woman-scream-6333 (mp3cut.net)");
+            _soundEffect2 = game.Content.Load<SoundEffect>("Sound/monster_hurt_c_08-102842 (mp3cut.net)");
         }
 
         public override void Update(GameTime gameTime)
         {
-            if (BossStatus <= 0.25)
+            if (BossStatus <= 0.30)
             {
                 _bossOne._speed = random.Next(6, 10);
                 _bossOne.attackIntervel = 0.2f;
-                speedOne = random.Next(7, 100);   
-                speedTwo = random.Next(0, 10);
+                speedOne = random.Next(7, 100);
+                speedTwo = random.Next(0, 20);
             }
             else if (BossStatus <= 0.50)
             {
                 _bossOne.attackIntervel = 0.4f;
                 _bossOne._speed = random.Next(3, 3);
-                speedOne = random.Next(6, 7);
-                speedTwo = random.Next(0, 10);
+                speedOne = random.Next(8, 10);
+                speedTwo = random.Next(0, 16);
+                if (!soundFlag)
+                {
+                    _soundEffect.Play();
+                    soundFlag = true;
+                }
             }
-            else if (BossStatus <= 0.75)
+            else if (BossStatus <= 0.80)
             {
-                _bossOne. attackIntervel = 0.5f;
+                _bossOne.attackIntervel = 0.5f;
                 _bossOne._speed = random.Next(2, 3);
-                speedOne = random.Next(4, 7);
-                speedTwo = random.Next(0, 10);
+                speedOne = random.Next(6, 7);
+                speedTwo = random.Next(0, 13);
             }
             else
             {
                 _bossOne.attackIntervel = 0.6f;
                 _bossOne._speed = random.Next(1, 3);
-                speedOne = random.Next(0, 7);
+                speedOne = random.Next(4, 7);
                 speedTwo = random.Next(0, 10);
             }
 
@@ -94,6 +106,7 @@ namespace NDJPFinal.Source.Manager
                             BattleReportStats.MissionStatus = "SUCCESS";
                             _bossOne.IsRemoved = true;
                         }
+                        _soundEffect2.Play();
                         _bossOneHealthBar.ChangeHealthBarState();
                         BossStatus = _bossOneHealthBar.HealthBarStatus;
                     }

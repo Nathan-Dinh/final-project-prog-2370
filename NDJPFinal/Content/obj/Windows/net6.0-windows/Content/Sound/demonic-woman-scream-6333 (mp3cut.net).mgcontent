@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/demonic-woman-scream-6333 (mp3cut.net).wav</SourceFile>
+  <SourceTime>2023-12-09T21:35:30.958446-05:00</SourceTime>
+  <DestFile>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/bin/Windows/Content/Sound/demonic-woman-scream-6333 (mp3cut.net).xnb</DestFile>
+  <DestTime>2023-12-09T21:37:40.9839999-05:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2022-07-26T07:44:56-04:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2022-07-26T07:44:56-04:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

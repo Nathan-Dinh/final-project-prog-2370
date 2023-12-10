@@ -28,14 +28,20 @@
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Font/RandomFont.spritefont</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Font/RegularFont.spritefont</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/coin-collect-retro-8-bit-sound-effect-145251.wav</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/demonic-woman-scream-6333 (mp3cut.net).wav</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).wav</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).wav</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/heart-beat-137135.wav</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/hurt_c_08-102842.wav</File>
+    <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/monster_hurt_c_08-102842 (mp3cut.net).wav</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/retro-video-game-death-95730.wav</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/zap-exile.wav</File>
     <File>E:/school/term3/PROG2370 - Game Prog with Data struc/Assignment/NDJPFinal/NDJPFinal/Content/Sound/zap-testground.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

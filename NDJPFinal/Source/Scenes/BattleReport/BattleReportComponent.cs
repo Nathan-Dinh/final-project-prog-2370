@@ -37,7 +37,7 @@ namespace NDJPFinal.Source.Scenes.BattleReport
                 }
                 else
                 {
-                    BattleReportStats.TotalScore += 250;
+                    BattleReportStats.TotalScore += 500;
                 }
             }
 
