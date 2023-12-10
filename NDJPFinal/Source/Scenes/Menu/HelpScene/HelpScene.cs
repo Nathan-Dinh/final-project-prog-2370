@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NDJPFinal.Source.Scenes.Menu
+namespace NDJPFinal.Source.Scenes.Menu.HelpScene
 {
 
     public class HelpScene : GameScene
@@ -21,7 +21,7 @@ namespace NDJPFinal.Source.Scenes.Menu
             Main game1 = (Main)game;
             spriteBactch = game1.SpriteBatch;
             helpComponent = new HelpComponent(game1, spriteBactch);
-            this.Components.Add(helpComponent);
+            Components.Add(helpComponent);
         }
     }
 }

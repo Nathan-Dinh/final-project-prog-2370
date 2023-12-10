@@ -102,3 +102,10 @@ E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFi
 E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\ARROWLEFT.xnb
 E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\ARROWRIGHT.xnb
 E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\ARROWUP.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\zap-exile.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\zap-testground.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\coin-collect-retro-8-bit-sound-effect-145251.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\hurt_c_08-102842.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\retro-video-game-death-95730.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).xnb

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Sprites
 {
-    internal class ScrolllingBackground : Sprite
+    public class ScrolllingBackground : Sprite
     {
         #region Texture
         private Texture2D _backgroundTexture;

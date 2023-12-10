@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Sprites.Boss.BossOne
 {
-    internal class BossOneHealthBar : Sprite
+    public class BossOneHealthBar : Sprite
     {
         private Texture2D _firstLayer;
         private Texture2D _secondLayer;
@@ -41,7 +41,7 @@ namespace NDJPFinal.Source.Sprites.Boss.BossOne
 
         public void ChangeHealthBarState()
         {
-            HealthBarStatus -= 0.50f;
+            HealthBarStatus -= 0.05f;
         }
 
     }

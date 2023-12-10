@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Sprites.Boss.BossOne
 {
-    internal class BossProjectileOne : Sprite
+    public class BossProjectileOne : Sprite
     {
         private float _timer;
 

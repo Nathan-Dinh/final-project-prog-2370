@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace NDJPFinal.Source.Sprites.Hero
 {
-    internal class HeroHealthBar : Sprite
+    public class HeroHealthBar : Sprite
     {
         #region Texture
         private Texture2D _firstLayer;

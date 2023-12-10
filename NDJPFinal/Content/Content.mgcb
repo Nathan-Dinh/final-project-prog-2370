@@ -274,3 +274,45 @@
 /processorParam:TextureFormat=Compressed
 /build:Font/RegularFont.spritefont
 
+#begin Sound/coin-collect-retro-8-bit-sound-effect-145251.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/coin-collect-retro-8-bit-sound-effect-145251.wav
+
+#begin Sound/Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).wav
+
+#begin Sound/Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).wav
+
+#begin Sound/hurt_c_08-102842.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/hurt_c_08-102842.wav
+
+#begin Sound/retro-video-game-death-95730.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/retro-video-game-death-95730.wav
+
+#begin Sound/zap-exile.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/zap-exile.wav
+
+#begin Sound/zap-testground.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/zap-testground.wav
+

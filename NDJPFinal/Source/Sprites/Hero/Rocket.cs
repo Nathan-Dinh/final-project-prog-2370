@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Sprites.Hero
 {
-    internal class Rocket : Sprite
+    public class Rocket : Sprite
     {
         private float _timer;
 

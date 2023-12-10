@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using NDJPFinal.Source.Global;
 using NDJPFinal.Source.Scenes.Stages;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +10,15 @@ using System.Linq;
 
 namespace NDJPFinal.Source.Sprites.Hero
 {
-    internal class Hero : Sprite
+    public class Hero : Sprite
     {
         #region Sprites
         public Bullet Bullet;
         public Rocket Rocket;
+        #endregion
+
+        #region Sound Effects
+        public SoundEffect SoundEffect;
         #endregion
 
         #region Animation
@@ -89,7 +95,7 @@ namespace NDJPFinal.Source.Sprites.Hero
             previousKey = currentKey;
             currentKey = Keyboard.GetState();
 
-            if (currentKey.IsKeyDown(Keys.Space) && gametime.TotalGameTime.TotalSeconds - LastSpacebarPressTime > 0.25)
+            if (currentKey.IsKeyDown(Keys.Space) && gametime.TotalGameTime.TotalSeconds - LastSpacebarPressTime > 0.50)
             {
                 AddBullet(sprites);
                 LastSpacebarPressTime = (float)gametime.TotalGameTime.TotalSeconds;
@@ -114,14 +120,13 @@ namespace NDJPFinal.Source.Sprites.Hero
                 {
                     SetDeathAnimation();
                     IsDead = true;
-                    StageOneScene.GameWin = true;
                 }
 
                 if (gametime.TotalGameTime.Seconds - _time < 4)
                 {
                     if (_spriteFrameTracker >= _currentAnimationFrames.Count() - 1)
                     {
-                        IsRemoved = true;
+                        this.IsRemoved = true;
                     }
                     else
                     {
@@ -152,7 +157,9 @@ namespace NDJPFinal.Source.Sprites.Hero
             bullet.LinearVelcitoy = LinearVelcitoy * 2;
             bullet.LifeSpan = 2f;
             bullet.Parent = this;
+            BattleReportStats.AmmoShot ++;
             sprites.Add(bullet);
+            SoundEffect.Play();
 
             /*var rocket = Rocket.Clone() as Rocket;
             rocket.Position = this.Position + new Vector2(TextureWidth / 2, 0);

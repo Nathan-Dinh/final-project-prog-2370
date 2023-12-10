@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NDJPFinal.Source.Sprites.Hero
 {
-    internal class Bullet : Sprite
+    public class Bullet : Sprite
     {
         #region Properties
         private float _timer;

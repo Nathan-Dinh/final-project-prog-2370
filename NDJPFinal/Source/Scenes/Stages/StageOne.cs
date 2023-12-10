@@ -1,25 +1,26 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using NDJPFinal.Source.Fonts;
 using NDJPFinal.Source.Manager;
 using NDJPFinal.Source.Sprites;
 using NDJPFinal.Source.Sprites.Hero;
 using NDJPFinal.Source.Sprites.Boss.BossOne;
 using System.Collections.Generic;
-
+using Microsoft.Xna.Framework.Audio;
+using NDJPFinal.Source.Global;
 
 namespace NDJPFinal.Source.Scenes.Stages
 {
-    internal class StageOne : DrawableGameComponent
+    public class StageOne : DrawableGameComponent
     {
         private SpriteBatch _spriteBatch;
         private List<Sprite> _sprites;
+        public HeroManager heroManager;
+        public BossOneManager bossOneManager;
         public StageOne(Game game) : base(game)
         {
             #region Textures
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             var backgroundTexture = game.Content.Load<Texture2D>("2d/background/SpaceSpriteSheet");
-
             var bossOneTexture = game.Content.Load<Texture2D>("2d/Boss/BossOne-Squid/Squid Full sheet orange (1)");
             var bossProjectileOne = game.Content.Load<Texture2D>("2d/wepon/Main ship weapon - Projectile - Big Space Gun");
             var bossOneHealthBarLayerOne = new Texture2D(GraphicsDevice, 1, 1);
@@ -35,6 +36,8 @@ namespace NDJPFinal.Source.Scenes.Stages
             var bullterTexture = game.Content.Load<Texture2D>("2d/Wepon/Main ship weapon - Projectile - Auto cannon bullet");
             #endregion
 
+            var soundEffect = game.Content.Load<SoundEffect>("Sound/zap-testground");
+
             #region Initialization  
             var backGroundTexture = new ScrolllingBackground(backgroundTexture, 0, new Vector2(0, 0));
 
@@ -43,6 +46,7 @@ namespace NDJPFinal.Source.Scenes.Stages
                 Position = new Vector2(400, 700),
                 Bullet = new Bullet(bullterTexture, 0.1f),
                 Rocket = new Rocket(rocketTexture, 0.1f),
+                SoundEffect = soundEffect
             };
             var bossOne = new BossOne(bossOneTexture, 0.2f, 4)
             {
@@ -70,22 +74,34 @@ namespace NDJPFinal.Source.Scenes.Stages
             #endregion
 
             #region Managers
-            BossOneManager bossOneCollisionManager = new BossOneManager(game, backGroundTexture, bossOne, bossHealthBar, _sprites);
-            HeroManager shipCollisionManager = new HeroManager(game, hero, backGroundTexture, healthBar, _sprites);
+            var heroManager = new BossOneManager(game, backGroundTexture, bossOne, bossHealthBar, _sprites);
+            var bossOneManager = new HeroManager(game, hero, backGroundTexture, healthBar, _sprites);
 
-            game.Components.Add(bossOneCollisionManager);
-            game.Components.Add(shipCollisionManager);
+            game.Components.Add(heroManager);
+            game.Components.Add(bossOneManager);
             #endregion
         }
 
         public override void Update(GameTime gameTime)
         {
+
             foreach (var sprite in _sprites.ToArray())
                 sprite.Update(gameTime, _sprites);
             PostUpdate();
+            BattleReportStats.UpdateDateTime();
             base.Update(gameTime);
         }
 
+
+        public override void Draw(GameTime gameTime)
+        {
+            _spriteBatch.Begin(SpriteSortMode.FrontToBack);
+            foreach (var sprite in _sprites)
+                sprite.Draw(_spriteBatch);
+            _spriteBatch.End();
+
+            base.Draw(gameTime);
+        }
         private void PostUpdate()
         {
             for (int i = 0; i < _sprites.Count; i++)
@@ -96,16 +112,6 @@ namespace NDJPFinal.Source.Scenes.Stages
                     i--;
                 }
             }
-        }
-
-        public override void Draw(GameTime gameTime)
-        {
-            _spriteBatch.Begin(SpriteSortMode.FrontToBack);
-            foreach (var sprite in _sprites)
-                sprite.Draw(_spriteBatch);
-            _spriteBatch.End();
-
-            base.Draw(gameTime);
         }
 
     }

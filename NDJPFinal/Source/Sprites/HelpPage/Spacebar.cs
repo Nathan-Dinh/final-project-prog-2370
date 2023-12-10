@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace NDJPFinal.Source.Sprites.HelpPage
 {
-    internal class Spacebar : Sprite
+    public class Spacebar : Sprite
     {
         private Texture2D _texture;
         private List<Rectangle> _frames;

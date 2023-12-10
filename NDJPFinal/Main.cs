@@ -1,14 +1,15 @@
 ﻿using JP_ND_FinalProject.Scenes;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using NDJPFinal.Source.Fonts;
-using NDJPFinal.Source.Manager;
-using NDJPFinal.Source.Scenes.Menu;
+using NDJPFinal.Source.Global;
+using NDJPFinal.Source.Scenes.BattleReport;
+using NDJPFinal.Source.Scenes.Menu.GameSetting;
+using NDJPFinal.Source.Scenes.Menu.HelpScene;
+using NDJPFinal.Source.Scenes.Menu.StartScene;
 using NDJPFinal.Source.Scenes.Stages;
-using NDJPFinal.Source.Sprites;
 using System;
-using System.Collections.Generic;
 
 namespace NDJPFinal
 {
@@ -20,6 +21,10 @@ namespace NDJPFinal
         public StartScene StartScene;
         public StageOneScene StageOneScene;
         public HelpScene HelpScene;
+        public GameSettingScene gameSettingScene;
+        public BattleReportScene battleReportScene;
+
+        public SoundEffect cursorReady;
 
         public Main()
         {
@@ -36,18 +41,24 @@ namespace NDJPFinal
         protected override void LoadContent()
         {
             SpriteBatch = new SpriteBatch(GraphicsDevice);
-            StartScene = new StartScene(this);
-            HelpScene = new HelpScene(this);
+            this.StageOneScene = new StageOneScene(this);
+            this.StartScene = new StartScene(this);
+            this.HelpScene = new HelpScene(this);
+            this.gameSettingScene = new GameSettingScene(this);
+            this.battleReportScene = new BattleReportScene(this);
+
+            cursorReady = this.Content.Load<SoundEffect>("Sound/Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2)");
+
+            this.Components.Add(battleReportScene);
             this.Components.Add(StageOneScene);
             this.Components.Add(StartScene);
             this.Components.Add(HelpScene);
-            this.StageOneScene = new StageOneScene(this);
+            this.Components.Add(gameSettingScene);
             StartScene.show();
         }
 
         protected override void Update(GameTime gameTime)
         {
-            
             if (StartScene.Visible)
             {
                 if (Keyboard.GetState().IsKeyDown(Keys.Enter))
@@ -57,10 +68,11 @@ namespace NDJPFinal
                     switch (selectedScene)
                     {
                         case 0:
-                            ResetStage();
+                            BattleReportStats.ResetBattleReport();
                             StageOneScene.show();
                             break;
                         case 1:
+                            gameSettingScene.show();
                             break;
                         case 2:
                             HelpScene.show();
@@ -69,6 +81,7 @@ namespace NDJPFinal
                             Exit();
                             break;
                     }
+                    cursorReady.Play();
                 }
             }
             else
@@ -77,16 +90,15 @@ namespace NDJPFinal
                 {
                     hideAllScenes();
                     StartScene.show();
+                }else if (StageOneScene.GameResult)
+                {
+                    hideAllScenes();
+                    StageOneScene.GameResult = false;
+                    battleReportScene.show();
                 }
             }
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 Exit();
-            if (CheckWin(StageOneScene))
-            {
-                hideAllScenes();
-                StartScene.show();
-            }
-
             base.Update(gameTime);
         }
 
@@ -101,6 +113,18 @@ namespace NDJPFinal
 
         public void hideAllScenes()
         {
+            this.Components.Clear();
+            this.StageOneScene = new StageOneScene(this);
+            this.StartScene = new StartScene(this);
+            this.HelpScene = new HelpScene(this);
+            this.gameSettingScene = new GameSettingScene(this);
+            this.battleReportScene = new BattleReportScene(this);
+            this.Components.Add(battleReportScene);
+            this.Components.Add(StageOneScene);
+            this.Components.Add(StartScene);
+            this.Components.Add(HelpScene);
+            this.Components.Add(gameSettingScene);
+
             foreach (var scene in this.Components)
             {
                 if (scene is GameScene)
@@ -111,25 +135,6 @@ namespace NDJPFinal
                 }
             }
         }
-
-        public bool CheckWin(StageOneScene stageOneScene)
-        {
-            if (StageOneScene.GameWin) 
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public void ResetStage()
-        {
-            this.StageOneScene = new StageOneScene(this);
-            this.Components.Add(StageOneScene);
-        }
-       
     }
 
     public static class Program 

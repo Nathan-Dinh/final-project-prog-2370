@@ -4,16 +4,21 @@ using NDJPFinal.Source.Sprites;
 using NDJPFinal.Source.Sprites.Hero;
 using NDJPFinal.Source.Sprites.Boss.BossOne;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Audio;
+using NDJPFinal.Source.Scenes.Stages;
+using NDJPFinal.Source.Global;
 
 namespace NDJPFinal.Source.Manager
 {
-    internal class HeroManager : GameComponent
+    public class HeroManager : GameComponent
     {
         private Hero _ship;
         private ScrolllingBackground _scrollingBackground;
         private List<Sprite> _sprites;
         private HeroHealthBar _healthBar;
         private float _time;
+        private SoundEffect _gettingHit;
+        private SoundEffect _deathSound;
 
         public HeroManager(Game game, Hero ship, ScrolllingBackground scrolllingBackground,HeroHealthBar healthBar,List<Sprite>sprites) : base(game)
         {
@@ -21,6 +26,8 @@ namespace NDJPFinal.Source.Manager
             this._scrollingBackground = scrolllingBackground;
             this._sprites = sprites;
             this._healthBar = healthBar;
+            _gettingHit = game.Content.Load<SoundEffect>("Sound/hurt_c_08-102842");
+            _deathSound = game.Content.Load<SoundEffect>("Sound/retro-video-game-death-95730");
         }
 
         public override void Update(GameTime gameTime)
@@ -50,17 +57,26 @@ namespace NDJPFinal.Source.Manager
 
             foreach (Sprite sprite in _sprites)
             {
-                if (sprite is BossProjectileOne && sprite.Parent is BossOne && (gameTime.TotalGameTime.TotalSeconds - _time) > 2)
+                if (sprite is BossProjectileOne && sprite.Parent is BossOne && (gameTime.TotalGameTime.TotalSeconds - _time) > 1)
                 {
                     BossProjectileOne bullet = (BossProjectileOne)sprite;
-                    if (_ship.SpriteBoundry.Intersects(bullet.rectangle))
+
+                    if (_ship.SpriteBoundry.Intersects(bullet.rectangle) && !_ship.IsRemoved)
                     {
                         _healthBar.ChangeHealthBarState();
                         _ship.HeroStatus = _healthBar.HealthBarStatus;
+                        BattleReportStats.HitsTaken++;
+
                         if (_healthBar.HealthBarStatus <= 0)
                         {
-                            //_ship.IsRemoved= true;
+                            _deathSound.Play();
+                            StageOneScene.GameResult = true;
+                            BattleReportStats.MissionStatus = "FAILURE";
+                            _healthBar.HealthBarStatus = 1;
+                            break;
                         }
+                        _gettingHit.Play();
+                        bullet.IsRemoved= true;
                         _time = (float)gameTime.TotalGameTime.TotalSeconds;
                     }
                 }

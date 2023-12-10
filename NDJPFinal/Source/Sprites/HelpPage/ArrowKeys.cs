@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace NDJPFinal.Source.Sprites.HelpPage
 {
-    internal class ArrowKeys : Sprite
+    public class ArrowKeys : Sprite
     {
         public Texture2D textureUPArrow;
         public Texture2D textureDownArrow;

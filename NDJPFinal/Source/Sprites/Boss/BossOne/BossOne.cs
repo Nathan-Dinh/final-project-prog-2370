@@ -1,7 +1,5 @@
-﻿using JP_ND_FinalProject.Scenes;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using NDJPFinal.Source.Scenes.Stages;
 using NDJPFinal.Source.Sprites.Hero;
 using System;
 using System.Collections.Generic;
@@ -9,7 +7,7 @@ using System.Linq;
 
 namespace NDJPFinal.Source.Sprites.Boss.BossOne
 {
-    internal class BossOne : Sprite
+    public class BossOne : Sprite
     {
         private Texture2D texture;
 
@@ -21,14 +19,16 @@ namespace NDJPFinal.Source.Sprites.Boss.BossOne
 
         private int _spriteFrameTracker;
 
+        public float attackIntervel;
+
         public Rectangle rectangle
         {
             get
             {
                 return new Rectangle((int)Position.X - 5,
                     (int)Position.Y - 5,
-                    TextureWidth/2,
-                    TextureHeight/2);
+                    TextureWidth / 2,
+                    TextureHeight / 2);
             }
         }
 
@@ -45,8 +45,6 @@ namespace NDJPFinal.Source.Sprites.Boss.BossOne
         public int TextureHeight;
         public bool reveseTrue = false;
         public bool ifHit = false;
-        public float BossStatus = 1;
-
 
         Random random = new Random();
         public BossOne(Texture2D texture, float layer, int frames) : base(texture, layer)
@@ -69,37 +67,23 @@ namespace NDJPFinal.Source.Sprites.Boss.BossOne
         public override void Update(GameTime gametime, List<Sprite> sprites)
         {
 
-            if (!IsRemoved)
+            Position += _direction;
+
+            if (gametime.TotalGameTime.TotalSeconds - _time > attackIntervel)
             {
-                if (BossStatus <= 0.75f)
-                {
-                    AddBullet(sprites);
-                }
-                else if (BossStatus <= 1)
-                {
-                    Position += _direction;
-
-                    if (gametime.TotalGameTime.TotalSeconds - _time > 0.50)
-                    {
-                        AddBullet(sprites);
-                        _time = (float)gametime.TotalGameTime.TotalSeconds;
-                    }
-
-                    if (gametime.TotalGameTime.TotalSeconds - _spriteTime > 0.4)
-                    {
-                        if (!reveseTrue && _spriteFrameTracker == _spriteSheetFrames.Count() - 1)
-                        {
-                            _spriteFrameTracker = 0;
-                        }
-
-                        _spriteFrameTracker++;
-                        _spriteTime = (float)gametime.TotalGameTime.TotalSeconds;
-                    }
-                }
+                AddBullet(sprites);
+                _time = (float)gametime.TotalGameTime.TotalSeconds;
             }
-            else if(IsRemoved)
+
+            if (gametime.TotalGameTime.TotalSeconds - _spriteTime > 0.4f)
             {
-                StageOneScene.GameWin = true;
+                if (!reveseTrue && _spriteFrameTracker == _spriteSheetFrames.Count() - 1)
+                {
+                    _spriteFrameTracker = 0;
+                }
+
+                _spriteFrameTracker++;
+                _spriteTime = (float)gametime.TotalGameTime.TotalSeconds;
             }
 
             base.Update(gametime, sprites);
@@ -115,7 +99,7 @@ namespace NDJPFinal.Source.Sprites.Boss.BossOne
         {
             var bullet = BossProjectileOne.Clone() as BossProjectileOne;
             bullet.Position = Position + new Vector2(TextureWidth / 2, TextureHeight / 2);
-            bullet.LinearVelcitoy = LinearVelcitoy * (random.Next(1, 3) * -1);
+            bullet.LinearVelcitoy =( LinearVelcitoy + _speed ) * -1;
             bullet.LifeSpan = 2f;
             bullet.Parent = this;
             sprites.Add(bullet);
