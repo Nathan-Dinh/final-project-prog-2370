@@ -17,25 +17,40 @@ namespace NDJPFinal.Source.Sprites
         #endregion
 
         #region Properties
+        // List of rectangles representing frames for the current animation
         private List<Rectangle> _currentAnimationFrames;
+
+        // List of rectangles representing frames for the background animation
         private List<Rectangle> _backgroundAnimationFrames;
 
+        // Index of the current image/frame for the first animation
         private int _currentImage1;
 
+        // Index of the current image/frame for the second animation
         private int _currentImage2;
 
+        // Number of rows in the sprite sheet
         private int _rows = 2;
 
+        // Number of columns in the sprite sheet
         private int _columns = 3;
 
+        // Width of a single sprite in the sprite sheet
         public int SpriteWidth;
 
+        // Height of a single sprite in the sprite sheet
         public int SpriteHeight;
 
-        private Vector2 _postion1, _postion2;
+        // Position of the first entity or sprite
+        private Vector2 _position1;
 
+        // Position of the second entity or sprite
+        private Vector2 _position2;
+
+        // Velocity vector for movement
         private Vector2 _velocity;
 
+        // Random object for generating random numbers
         Random random = new Random();
         #endregion
 
