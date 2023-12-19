@@ -1,0 +1,59 @@
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\NDJPFinal.exe
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\ARROWDOWN.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\ARROWLEFT.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\ARROWRIGHT.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\ARROWUP.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\BACKSPACEALTERNATIVE (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\SpaceSpriteSheet.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\Window_Header (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\Window_Header (3).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Background\Window_Header.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Boss\BossOne-Squid\Squid Full sheet orange (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Hero\greenbar (2) (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Hero\greenbar (3) (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Hero\health-bar.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Main Ship - Base - Full health.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\ship-sprite-sheet (1).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Ship1_0010_Hull_GreenFlash4_4.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Wepon\Main ship weapon - Projectile - Auto cannon bullet.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Wepon\Main ship weapon - Projectile - Big Space Gun.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/2d\Wepon\Main ship weapon - Projectile - Rocket.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/explosion.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Font\HighLightedFont.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Font\RandomFont.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Font\RegularFont.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\coin-collect-retro-8-bit-sound-effect-145251.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\demonic-woman-scream-6333 (mp3cut.net).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\heart-beat-137135.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\hurt_c_08-102842.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\monster_hurt_c_08-102842 (mp3cut.net).xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\retro-video-game-death-95730.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\zap-exile.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Content/Sound\zap-testground.xnb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\NDJPFinal.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\NDJPFinal.deps.json
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\NDJPFinal.runtimeconfig.json
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\NDJPFinal.pdb
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Microsoft.CodeAnalysis.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Microsoft.CodeAnalysis.CSharp.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\MonoGame.Framework.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.Direct2D1.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.Direct3D11.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.Direct3D9.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.DXGI.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.Mathematics.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.MediaFoundation.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.XAudio2.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\SharpDX.XInput.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\runtimes\debian-x64\native\libuv.so
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\runtimes\fedora-x64\native\libuv.so
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\runtimes\opensuse-x64\native\libuv.so
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\runtimes\osx\native\libuv.dylib
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\runtimes\rhel-x64\native\libuv.so
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\runtimes\win7-arm\native\libuv.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\runtimes\win7-x64\native\libuv.dll
+E:\school\term3\PROG2370 - Game Prog with Data struc\Assignment\NDJPFinal\NDJPFinal\bin\Release\net6.0-windows\app.publish\runtimes\win7-x86\native\libuv.dll

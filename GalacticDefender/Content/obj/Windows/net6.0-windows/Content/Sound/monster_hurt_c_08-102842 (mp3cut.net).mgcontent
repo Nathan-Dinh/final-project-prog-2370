@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/natha/Documents/Personal/Coding-Projects/Galactic-Defender/GalacticDefender/Content/Sound/monster_hurt_c_08-102842 (mp3cut.net).wav</SourceFile>
+  <SourceTime>2023-12-18T21:33:58.9978077-05:00</SourceTime>
+  <DestFile>C:/Users/natha/Documents/Personal/Coding-Projects/Galactic-Defender/GalacticDefender/Content/bin/Windows/Content/Sound/monster_hurt_c_08-102842 (mp3cut.net).xnb</DestFile>
+  <DestTime>2023-12-18T21:44:22.5744913-05:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2022-07-26T07:44:56-04:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2022-07-26T07:44:56-04:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

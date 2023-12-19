@@ -1,0 +1,140 @@
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\ARROWDOWN.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\ARROWLEFT.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\ARROWRIGHT.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\ARROWUP.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\BACKSPACEALTERNATIVE (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\SpaceSpriteSheet.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\Window_Header (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\Window_Header (3).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Background\Window_Header.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Boss\BossOne-Squid\Squid Full sheet orange (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Hero\greenbar (2) (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Hero\greenbar (3) (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Hero\health-bar.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Main Ship - Base - Full health.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\ship-sprite-sheet (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Ship1_0010_Hull_GreenFlash4_4.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Auto cannon bullet.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Big Space Gun.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Rocket.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\explosion.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Font\HighLightedFont.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Font\RandomFont.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Font\RegularFont.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\coin-collect-retro-8-bit-sound-effect-145251.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\demonic-woman-scream-6333 (mp3cut.net).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\heart-beat-137135.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\hurt_c_08-102842.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\monster_hurt_c_08-102842 (mp3cut.net).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\retro-video-game-death-95730.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\zap-exile.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Content\Sound\zap-testground.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\GalacticDefender.exe
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\GalacticDefender.deps.json
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\GalacticDefender.runtimeconfig.json
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\GalacticDefender.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\GalacticDefender.pdb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.csproj.AssemblyReference.cache
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.AssemblyInfoInputs.cache
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.AssemblyInfo.cs
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.csproj.CoreCompileInputs.cache
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.csproj.CopyComplete
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\refint\GalacticDefender.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.pdb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\GalacticDefender.genruntimeconfig.cache
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\NDJPFinal\obj\Debug\net6.0-windows\ref\GalacticDefender.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\ARROWDOWN.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\ARROWLEFT.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\ARROWRIGHT.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\ARROWUP.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\BACKSPACEALTERNATIVE (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\SpaceSpriteSheet.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\Window_Header (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\Window_Header (3).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Background\Window_Header.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Boss\BossOne-Squid\Squid Full sheet orange (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Hero\greenbar (2) (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Hero\greenbar (3) (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Hero\health-bar.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Main Ship - Base - Full health.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\ship-sprite-sheet (1).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Ship1_0010_Hull_GreenFlash4_4.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Auto cannon bullet.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Big Space Gun.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\2d\Wepon\Main ship weapon - Projectile - Rocket.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\explosion.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Font\HighLightedFont.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Font\RandomFont.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Font\RegularFont.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\coin-collect-retro-8-bit-sound-effect-145251.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\demonic-woman-scream-6333 (mp3cut.net).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\Final Fantasy VII Sound Effects - Cursor Move (mp3cut.net).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\Final Fantasy VII Sound Effects - Cursor Ready (mp3cut.net) (2).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\heart-beat-137135.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\hurt_c_08-102842.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\monster_hurt_c_08-102842 (mp3cut.net).xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\retro-video-game-death-95730.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\zap-exile.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Content\Sound\zap-testground.xnb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\GalacticDefender.exe
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\GalacticDefender.deps.json
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\GalacticDefender.runtimeconfig.json
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\GalacticDefender.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\GalacticDefender.pdb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.csproj.AssemblyReference.cache
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.AssemblyInfoInputs.cache
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.AssemblyInfo.cs
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.csproj.CoreCompileInputs.cache
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.csproj.CopyComplete
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\refint\GalacticDefender.dll
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.pdb
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\GalacticDefender.genruntimeconfig.cache
+C:\Users\natha\Documents\Personal\Coding-Projects\Galactic-Defender\GalacticDefender\obj\Debug\net6.0-windows\ref\GalacticDefender.dll
