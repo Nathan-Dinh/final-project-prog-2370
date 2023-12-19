@@ -1,14 +1,11 @@
 # Galactice Defender
 
-This a small game I created using monogame. It a take on the classical 2004 game Battlestar Galactica
+This is a small game I created using **monogame**. It is a take on the classical 2004 game Battlestar Galactica
 
 ## Table of Contents
 
 - [Game Description](#game-description)
-- [Installation](#installation)
 - [Gameplay](#gameplay)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Game Description
 
